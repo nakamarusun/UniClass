@@ -11,7 +11,9 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var ScrollView: UIScrollView!
+    @IBOutlet weak var ScrollHorizontal: UIScrollView!
     @IBAction func ExtButton(_ sender: Any) {
+        ScrollHorizontal.contentSize = CGSize(width: 700, height: 182)
         ScrollView.contentSize = CGSize(width: 414, height: 1500)
     }
     
