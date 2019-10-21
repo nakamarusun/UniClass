@@ -4,7 +4,6 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -63,7 +62,7 @@
                                                         <rect key="frame" x="0.0" y="0.0" width="398" height="182"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dbv-18-eRv">
-                                                                <rect key="frame" x="21" y="74" width="42" height="21"/>
+                                                                <rect key="frame" x="131" y="81" width="158" height="21"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                 <nil key="textColor"/>
@@ -81,31 +80,11 @@
                                                 <viewLayoutGuide key="contentLayoutGuide" id="uLj-HN-Vlt"/>
                                                 <viewLayoutGuide key="frameLayoutGuide" id="Ewy-VK-IQF"/>
                                             </scrollView>
-                                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="7Ic-KD-jG1">
-                                                <rect key="frame" x="19" y="512" width="240" height="128"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="MQZ-6H-BpW">
-                                                    <size key="itemSize" width="50" height="50"/>
-                                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                                </collectionViewFlowLayout>
-                                                <cells>
-                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="1uf-4i-Rzo">
-                                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Vrf-cw-byD">
-                                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                                            <autoresizingMask key="autoresizingMask"/>
-                                                        </collectionViewCellContentView>
-                                                    </collectionViewCell>
-                                                </cells>
-                                            </collectionView>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="VTU-u0-9tG" secondAttribute="trailing" constant="8" id="KR4-h7-Jzd"/>
+                                            <constraint firstAttribute="bottom" secondItem="VTU-u0-9tG" secondAttribute="bottom" constant="768" id="NvI-ev-OSz"/>
                                             <constraint firstItem="VTU-u0-9tG" firstAttribute="leading" secondItem="7As-Cf-RNg" secondAttribute="leading" constant="8" id="dYK-cv-vCP"/>
                                             <constraint firstAttribute="height" constant="1017" id="e7E-Zi-li8"/>
                                             <constraint firstAttribute="bottom" secondItem="VTU-u0-9tG" secondAttribute="bottom" constant="768" id="js7-NL-xu0"/>
@@ -143,6 +122,7 @@
                     <size key="freeformSize" width="414" height="1200"/>
                     <connections>
                         <outlet property="ScrollHorizontal" destination="VTU-u0-9tG" id="aZ0-MF-nKj"/>
+                        <outlet property="ScrollOffset" destination="dbv-18-eRv" id="KVv-V2-0hU"/>
                         <outlet property="ScrollView" destination="e6o-lX-q2I" id="Qlz-L6-53x"/>
                     </connections>
                 </viewController>
@@ -156,6 +136,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="h8d-Ab-dnY" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="TOX-xl-nR3">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
