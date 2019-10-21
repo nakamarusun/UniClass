@@ -15,7 +15,6 @@ class ViewController: UIViewController {
     @IBOutlet weak var ScrollOffset: UILabel!
     
     @IBAction func ExtButton(_ sender: Any) {
-        ScrollHorizontal.contentSize = CGSize(width: 700, height: 182)
         ScrollView.contentSize = CGSize(width: 414, height: 1500)
         ScrollHorizontal.contentOffset = CGPoint(x: 100, y: 0)
     }
@@ -24,6 +23,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         print("[DEBUG MESSAGE] View loaded.")
+        ScrollHorizontal.contentSize = CGSize(width: 700, height: 182)  //Set the horizontal scroll
         // Do any additional setup after loading the view.
     }
 
