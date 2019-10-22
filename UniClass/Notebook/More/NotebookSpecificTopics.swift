@@ -17,6 +17,11 @@ class NotebookSpecificTopics: UIViewController {
         
         super.viewDidLoad()
         NavigationBar.title = "\(selectedCell.cellName)"
+        
+        switch selectedCell.cellName {
+        default:
+            print("SELECTED TOPIC NULL")
+        }
     }
     
 
