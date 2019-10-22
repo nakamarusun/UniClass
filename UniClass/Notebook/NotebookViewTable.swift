@@ -38,7 +38,7 @@ class NotebookViewTable: UIViewController, UITableViewDataSource, UITableViewDel
         self.NotebookController.delegate = self
         
         cellArray = []
-        cellArray.append(StandardCell(cellName: "Math", cellSubtitle: "It's kinda hard tbh"))
+        cellArray.append(StandardCell(cellName: "Matematika", cellSubtitle: "Math is the only place where truth and beauty mean same thing",)
     }
     
 
