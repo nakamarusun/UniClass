@@ -14,7 +14,7 @@ class AccountView: UIViewController {
 
     override func viewDidLoad() {
         
-        ScrollView.contentSize = CGSize(width: 414, height: 1029)
+        ScrollView.contentSize = CGSize(width: 414, height: 1229)
         
         super.viewDidLoad()
         
