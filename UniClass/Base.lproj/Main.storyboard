@@ -229,15 +229,37 @@
                         <viewLayoutGuide key="safeArea" id="EKq-aJ-ahU"/>
                     </view>
                     <navigationItem key="navigationItem" title="Topics" largeTitleDisplayMode="always" id="Dla-xI-6RJ">
-                        <barButtonItem key="backBarButtonItem" title="Back" id="rRT-za-Oxs"/>
+                        <barButtonItem key="backBarButtonItem" title="Topics" id="rRT-za-Oxs"/>
                     </navigationItem>
                     <connections>
                         <outlet property="NotebookController" destination="TWM-cr-S62" id="iWA-Jg-WJN"/>
+                        <segue destination="DRz-h2-Dny" kind="show" identifier="goToSpecific" id="TKg-R3-zv2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BZF-UI-J9C" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1647.826086956522" y="843.75"/>
+            <point key="canvasLocation" x="1648" y="844"/>
+        </scene>
+        <!--Notebook Specific Topics-->
+        <scene sceneID="UxQ-CD-GXO">
+            <objects>
+                <viewController id="DRz-h2-Dny" customClass="NotebookSpecificTopics" customModule="UniClass" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="q7V-Vi-RRD">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="bxB-HC-90O"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="HeV-a5-OhA">
+                        <barButtonItem key="backBarButtonItem" title="Topics" id="feX-GE-g6E"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="NavigationBar" destination="HeV-a5-OhA" id="osd-IG-wBP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GGh-62-0mX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2412" y="844"/>
         </scene>
         <!--Group-->
         <scene sceneID="Q6I-ra-WJF">

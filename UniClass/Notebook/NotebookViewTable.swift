@@ -41,5 +41,16 @@ class NotebookViewTable: UIViewController, UITableViewDataSource, UITableViewDel
         cellArray.append(StandardCell())
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.performSegue(withIdentifier: "goToSpecific", sender: nil)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "goToSpecific" {
+            
+            let detailViewController = segue.destination as! NotebookSpecificTopics
+            detailViewController.selectedCell = cellArray[NotebookController.indexPathForSelectedRow!.row]
+        }
+    }
 
 }
