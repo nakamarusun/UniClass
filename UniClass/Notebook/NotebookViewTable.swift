@@ -27,6 +27,8 @@ class NotebookViewTable: UIViewController, UITableViewDataSource, UITableViewDel
         cell.CellSubtitle.text = menu.cellSubtitle
         cell.cellImage.image = menu.cellImage
         
+        cell.CellSubtitle.sizeToFit()
+        
         return cell
         
     }
