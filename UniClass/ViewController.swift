@@ -10,26 +10,23 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var ScrollView: UIScrollView!
-    @IBOutlet weak var ScrollHorizontal: UIScrollView!
-    @IBOutlet weak var ScrollOffset: UILabel!
-
+    @IBOutlet weak var mainScrollView: UIScrollView!
+    @IBOutlet weak var whatshotScrollView: UIScrollView!
+    
     @IBAction func buttonFavorite(_ sender: Any) {
         
         performSegue(withIdentifier: "ViewFavorites", sender: nil)
     }
     
-    @IBAction func ExtButton(_ sender: Any) {
-        ScrollHorizontal.contentOffset = CGPoint(x: 100, y: 0)
-    }
-    
 
     override func viewDidLoad() {
+        
         super.viewDidLoad()
-        print("[DEBUG MESSAGE] View loaded.")
-        ScrollHorizontal.contentSize = CGSize(width: 900, height: 182)
-        //Set the horizontal scroll
         // Do any additional setup after loading the view.
+        print("[DEBUG MESSAGE] View loaded.")
+        mainScrollView.contentSize = CGSize(width: 412, height: 1200)
+        whatshotScrollView.contentSize = CGSize(width: 600, height: 153)
+
     }
 
 
