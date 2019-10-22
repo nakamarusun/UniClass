@@ -16,6 +16,9 @@
 		01E56B04235E0B4C00CF377E /* NotebookViewTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E56B03235E0B4C00CF377E /* NotebookViewTable.swift */; };
 		01E56B08235E0FCA00CF377E /* NotebookTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E56B07235E0FCA00CF377E /* NotebookTableViewCell.swift */; };
 		01E56B0D235E11A900CF377E /* StandardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E56B0C235E11A900CF377E /* StandardCell.swift */; };
+		9A6F8D0F235EEC22005FA839 /* GroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6F8D0E235EEC22005FA839 /* GroupViewController.swift */; };
+		9A6F8D11235EECC5005FA839 /* cellGroups.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6F8D10235EECC5005FA839 /* cellGroups.swift */; };
+		9A6F8D13235EF0E4005FA839 /* GroupViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6F8D12235EF0E4005FA839 /* GroupViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +33,9 @@
 		01E56B03235E0B4C00CF377E /* NotebookViewTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotebookViewTable.swift; sourceTree = "<group>"; };
 		01E56B07235E0FCA00CF377E /* NotebookTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotebookTableViewCell.swift; sourceTree = "<group>"; };
 		01E56B0C235E11A900CF377E /* StandardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardCell.swift; sourceTree = "<group>"; };
+		9A6F8D0E235EEC22005FA839 /* GroupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupViewController.swift; sourceTree = "<group>"; };
+		9A6F8D10235EECC5005FA839 /* cellGroups.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cellGroups.swift; sourceTree = "<group>"; };
+		9A6F8D12235EF0E4005FA839 /* GroupViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +69,7 @@
 			isa = PBXGroup;
 			children = (
 				01E56B09235E10CF00CF377E /* Notebook */,
+				9A6F8D0D235EEBC4005FA839 /* Groups */,
 				01134A45235A0BCC00C04530 /* AppDelegate.swift */,
 				01134A47235A0BCC00C04530 /* SceneDelegate.swift */,
 				01134A49235A0BCC00C04530 /* ViewController.swift */,
@@ -82,6 +89,16 @@
 				01E56B0C235E11A900CF377E /* StandardCell.swift */,
 			);
 			path = Notebook;
+			sourceTree = "<group>";
+		};
+		9A6F8D0D235EEBC4005FA839 /* Groups */ = {
+			isa = PBXGroup;
+			children = (
+				9A6F8D0E235EEC22005FA839 /* GroupViewController.swift */,
+				9A6F8D10235EECC5005FA839 /* cellGroups.swift */,
+				9A6F8D12235EF0E4005FA839 /* GroupViewCell.swift */,
+			);
+			path = Groups;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -158,9 +175,12 @@
 				01134A4A235A0BCC00C04530 /* ViewController.swift in Sources */,
 				01134A46235A0BCC00C04530 /* AppDelegate.swift in Sources */,
 				01E56B0D235E11A900CF377E /* StandardCell.swift in Sources */,
+				9A6F8D11235EECC5005FA839 /* cellGroups.swift in Sources */,
 				01E56B08235E0FCA00CF377E /* NotebookTableViewCell.swift in Sources */,
+				9A6F8D13235EF0E4005FA839 /* GroupViewCell.swift in Sources */,
 				01E56B04235E0B4C00CF377E /* NotebookViewTable.swift in Sources */,
 				01134A48235A0BCC00C04530 /* SceneDelegate.swift in Sources */,
+				9A6F8D0F235EEC22005FA839 /* GroupViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
