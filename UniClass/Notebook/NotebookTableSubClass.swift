@@ -1,25 +1,20 @@
 //
-//  NotebookViewTable.swift
+//  NotebookTableSubClass.swift
 //  UniClass
 //
-//  Created by Jason Christian Hailianto on 21/10/19.
+//  Created by Jason Christian Hailianto on 23/10/19.
 //  Copyright © 2019 Jobba Inc. All rights reserved.
 //
 
 import UIKit
 
-class NotebookViewTable: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class NotebookTableSubClass: NotebookViewTable {
     
     @IBOutlet weak var NotebookController: UITableView!
-    var cellArray:[StandardCell]!
-
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return cellArray.count
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "menuCell", for: indexPath) as! NotebookTableViewCell
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "menuCell", for: indexPath) as! NotebookCell
         
         let menu = cellArray[indexPath.row]
         
@@ -33,13 +28,10 @@ class NotebookViewTable: UIViewController, UITableViewDataSource, UITableViewDel
     }
     
     override func viewDidLoad() {
+        
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
         self.NotebookController.dataSource = self
         self.NotebookController.delegate = self
-        
-        cellArray = []
-        cellArray.append(StandardCell())
         cellArray.append(StandardCell(cellName: "Matematika", cellSubtitle: "Math is the only place where truth and beauty mean same thing", cellImage: UIImage(named: "math1" )!) )
         cellArray.append(StandardCell(cellName: "Fisika", cellSubtitle: "What man calls God , The other call the law of physics", cellImage:UIImage (named: "fisika1")!) )
         cellArray.append(StandardCell(cellName: "Kimia", cellSubtitle: "Chemistry is like cooking ", cellImage:UIImage (named: "kimia1")!) )
@@ -51,10 +43,15 @@ class NotebookViewTable: UIViewController, UITableViewDataSource, UITableViewDel
         cellArray.append(StandardCell(cellName: "Sejarah", cellSubtitle: "We are not maker of history. We are made by history", cellImage: UIImage(named: "borobudur")!))
         cellArray.append(StandardCell(cellName: "Geografi", cellSubtitle: "In our changing world , nothing changes more than geography", cellImage: UIImage(named: "globe")!))
         
+        
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         self.performSegue(withIdentifier: "goToSpecific", sender: nil)
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 134
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

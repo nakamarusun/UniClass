@@ -16,7 +16,9 @@
 		012BE910235F5FB400BFB67D /* whatshotClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012BE90F235F5FB400BFB67D /* whatshotClass.swift */; };
 		012BE914235F618400BFB67D /* whatshotCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012BE913235F618400BFB67D /* whatshotCollectionViewCell.swift */; };
 		0172E840235F69220090E8E4 /* NotebookSpecificTopics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0172E83F235F69220090E8E4 /* NotebookSpecificTopics.swift */; };
-		01E56B04235E0B4C00CF377E /* NotebookViewTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E56B03235E0B4C00CF377E /* NotebookViewTable.swift */; };
+		01C5EF672360276200F8BA4E /* NotebookTableSubClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01C5EF662360276200F8BA4E /* NotebookTableSubClass.swift */; };
+		01C5EF6B23602E9A00F8BA4E /* NotebookTableCellSubClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01C5EF6A23602E9A00F8BA4E /* NotebookTableCellSubClass.swift */; };
+		01E56B04235E0B4C00CF377E /* TableViewSuperClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E56B03235E0B4C00CF377E /* TableViewSuperClass.swift */; };
 		01E56B08235E0FCA00CF377E /* NotebookTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E56B07235E0FCA00CF377E /* NotebookTableViewCell.swift */; };
 		01E56B0D235E11A900CF377E /* StandardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E56B0C235E11A900CF377E /* StandardCell.swift */; };
 /* End PBXBuildFile section */
@@ -33,7 +35,9 @@
 		012BE90F235F5FB400BFB67D /* whatshotClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = whatshotClass.swift; sourceTree = "<group>"; };
 		012BE913235F618400BFB67D /* whatshotCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = whatshotCollectionViewCell.swift; sourceTree = "<group>"; };
 		0172E83F235F69220090E8E4 /* NotebookSpecificTopics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotebookSpecificTopics.swift; sourceTree = "<group>"; };
-		01E56B03235E0B4C00CF377E /* NotebookViewTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotebookViewTable.swift; sourceTree = "<group>"; };
+		01C5EF662360276200F8BA4E /* NotebookTableSubClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotebookTableSubClass.swift; sourceTree = "<group>"; };
+		01C5EF6A23602E9A00F8BA4E /* NotebookTableCellSubClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotebookTableCellSubClass.swift; sourceTree = "<group>"; };
+		01E56B03235E0B4C00CF377E /* TableViewSuperClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewSuperClass.swift; sourceTree = "<group>"; };
 		01E56B07235E0FCA00CF377E /* NotebookTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotebookTableViewCell.swift; sourceTree = "<group>"; };
 		01E56B0C235E11A900CF377E /* StandardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -102,9 +106,11 @@
 			isa = PBXGroup;
 			children = (
 				0172E83E235F68E40090E8E4 /* More */,
-				01E56B03235E0B4C00CF377E /* NotebookViewTable.swift */,
+				01E56B03235E0B4C00CF377E /* TableViewSuperClass.swift */,
 				01E56B07235E0FCA00CF377E /* NotebookTableViewCell.swift */,
 				01E56B0C235E11A900CF377E /* StandardCell.swift */,
+				01C5EF662360276200F8BA4E /* NotebookTableSubClass.swift */,
+				01C5EF6A23602E9A00F8BA4E /* NotebookTableCellSubClass.swift */,
 			);
 			path = Notebook;
 			sourceTree = "<group>";
@@ -180,14 +186,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01C5EF6B23602E9A00F8BA4E /* NotebookTableCellSubClass.swift in Sources */,
 				012BE914235F618400BFB67D /* whatshotCollectionViewCell.swift in Sources */,
 				012BE910235F5FB400BFB67D /* whatshotClass.swift in Sources */,
 				0172E840235F69220090E8E4 /* NotebookSpecificTopics.swift in Sources */,
 				01134A4A235A0BCC00C04530 /* ViewController.swift in Sources */,
 				01134A46235A0BCC00C04530 /* AppDelegate.swift in Sources */,
+				01C5EF672360276200F8BA4E /* NotebookTableSubClass.swift in Sources */,
 				01E56B0D235E11A900CF377E /* StandardCell.swift in Sources */,
 				01E56B08235E0FCA00CF377E /* NotebookTableViewCell.swift in Sources */,
-				01E56B04235E0B4C00CF377E /* NotebookViewTable.swift in Sources */,
+				01E56B04235E0B4C00CF377E /* TableViewSuperClass.swift in Sources */,
 				01134A48235A0BCC00C04530 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
