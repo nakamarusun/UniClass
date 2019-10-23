@@ -55,7 +55,7 @@ class NotebookSpecificTopics: NotebookViewTable {
             
         case "Kimia":
             cellArray.append(StandardCell(cellName: "Materi", cellSubtitle: "Non", cellImage: UIImage(named: "kimia2")!))
-            cellArray.append(StandardCell(cellName: "Materi", cellSubtitle: "Non", cellImage: UIImage(named: "kimia4")!))
+            cellArray.append(StandardCell(cellName: "Struktur Atom", cellSubtitle: "Non", cellImage: UIImage(named: "kimia4")!))
             cellArray.append(StandardCell(cellName: "Sistem Periodik", cellSubtitle: "Non", cellImage: UIImage(named: "kimia1")!))
             
             
