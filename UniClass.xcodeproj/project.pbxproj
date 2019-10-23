@@ -13,6 +13,8 @@
 		01134A4D235A0BCC00C04530 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01134A4B235A0BCC00C04530 /* Main.storyboard */; };
 		01134A4F235A0BCD00C04530 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01134A4E235A0BCD00C04530 /* Assets.xcassets */; };
 		01134A52235A0BCD00C04530 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01134A50235A0BCD00C04530 /* LaunchScreen.storyboard */; };
+		012BE910235F5FB400BFB67D /* whatshotClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012BE90F235F5FB400BFB67D /* whatshotClass.swift */; };
+		012BE914235F618400BFB67D /* whatshotCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012BE913235F618400BFB67D /* whatshotCollectionViewCell.swift */; };
 		01E56B04235E0B4C00CF377E /* NotebookViewTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E56B03235E0B4C00CF377E /* NotebookViewTable.swift */; };
 		01E56B08235E0FCA00CF377E /* NotebookTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E56B07235E0FCA00CF377E /* NotebookTableViewCell.swift */; };
 		01E56B0D235E11A900CF377E /* StandardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E56B0C235E11A900CF377E /* StandardCell.swift */; };
@@ -30,6 +32,8 @@
 		01134A4E235A0BCD00C04530 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		01134A51235A0BCD00C04530 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		01134A53235A0BCD00C04530 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		012BE90F235F5FB400BFB67D /* whatshotClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = whatshotClass.swift; sourceTree = "<group>"; };
+		012BE913235F618400BFB67D /* whatshotCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = whatshotCollectionViewCell.swift; sourceTree = "<group>"; };
 		01E56B03235E0B4C00CF377E /* NotebookViewTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotebookViewTable.swift; sourceTree = "<group>"; };
 		01E56B07235E0FCA00CF377E /* NotebookTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotebookTableViewCell.swift; sourceTree = "<group>"; };
 		01E56B0C235E11A900CF377E /* StandardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardCell.swift; sourceTree = "<group>"; };
@@ -68,17 +72,27 @@
 		01134A44235A0BCC00C04530 /* UniClass */ = {
 			isa = PBXGroup;
 			children = (
+				012BE90E235F5F8D00BFB67D /* Home */,
 				01E56B09235E10CF00CF377E /* Notebook */,
 				9A6F8D0D235EEBC4005FA839 /* Groups */,
 				01134A45235A0BCC00C04530 /* AppDelegate.swift */,
 				01134A47235A0BCC00C04530 /* SceneDelegate.swift */,
-				01134A49235A0BCC00C04530 /* ViewController.swift */,
 				01134A4B235A0BCC00C04530 /* Main.storyboard */,
 				01134A4E235A0BCD00C04530 /* Assets.xcassets */,
 				01134A50235A0BCD00C04530 /* LaunchScreen.storyboard */,
 				01134A53235A0BCD00C04530 /* Info.plist */,
 			);
 			path = UniClass;
+			sourceTree = "<group>";
+		};
+		012BE90E235F5F8D00BFB67D /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				01134A49235A0BCC00C04530 /* ViewController.swift */,
+				012BE90F235F5FB400BFB67D /* whatshotClass.swift */,
+				012BE913235F618400BFB67D /* whatshotCollectionViewCell.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 		01E56B09235E10CF00CF377E /* Notebook */ = {
@@ -172,6 +186,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				012BE914235F618400BFB67D /* whatshotCollectionViewCell.swift in Sources */,
+				012BE910235F5FB400BFB67D /* whatshotClass.swift in Sources */,
 				01134A4A235A0BCC00C04530 /* ViewController.swift in Sources */,
 				01134A46235A0BCC00C04530 /* AppDelegate.swift in Sources */,
 				01E56B0D235E11A900CF377E /* StandardCell.swift in Sources */,
