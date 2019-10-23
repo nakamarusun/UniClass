@@ -8,13 +8,13 @@
 
 import UIKit
 
-class ViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
+class ViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
 
     @IBOutlet weak var whatshotCollectionView: UICollectionView!
     var whatshotImageArray:[whatshotClass]!
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        
+        print(whatshotImageArray.count)
         return whatshotImageArray.count
     }
     
@@ -25,13 +25,17 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         let menu = whatshotImageArray[indexPath.row]
         
         cell.cellImage.image = menu.cellImage
+        cell.cellImage.layer.cornerRadius = 10.0
+        cell.cellImage.layer.masksToBounds = true
         
         return cell
     }
     
-
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: 360, height: 172)
+    }
+    
     @IBOutlet weak var mainScrollView: UIScrollView!
-    @IBOutlet weak var whatshotScrollView: UIScrollView!
     
     @IBAction func buttonFavorite(_ sender: Any) {
         
@@ -42,18 +46,16 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     override func viewDidLoad() {
         
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
         print("[DEBUG MESSAGE] View loaded.")
         mainScrollView.contentSize = CGSize(width: 412, height: 1200)
-        whatshotScrollView.contentSize = CGSize(width: 600, height: 153)
         
         self.whatshotCollectionView.dataSource = self
-        self.whatshotCollectionView.dataSource = self
+        self.whatshotCollectionView.delegate = self
+        
         
         whatshotImageArray = []
-        whatshotImageArray.append(whatshotClass())
+        whatshotImageArray.append(whatshotClass(cellImage: UIImage(named: "biologi2")!, cellData: ""))
+        whatshotImageArray.append(whatshotClass(cellImage: UIImage(named: "biologi2")!, cellData: ""))
 
     }
-
-
 }
