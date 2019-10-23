@@ -32,6 +32,5 @@ class cellGroupMessage {
         self.cellMessenger = cellMessage
         self.cellMessage = cellMessenger
         self.cellTime = cellTitle
-        
     }
 }

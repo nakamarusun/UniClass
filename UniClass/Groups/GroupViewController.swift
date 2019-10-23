@@ -30,16 +30,26 @@ class GroupViewController: UIViewController, UITableViewDataSource, UITableViewD
         cell.cellTime.text = menu.cellTime
         
         return cell
-        
     }
     
+    @IBAction func newGroup(_ sender: Any) {
+        performSegue(withIdentifier: "goToGroupSelection", sender: nil)
+    }
+    
+    
     override func viewDidLoad() {
+       
         super.viewDidLoad()
         
         self.TableViewGroup.dataSource = self
         self.TableViewGroup.delegate = self
 
         groupArray.append(cellGroupMessage())
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        self.performSegue(withIdentifier: "goToGroupChat", sender: nil)
     }
     
 }
