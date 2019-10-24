@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		0109B35D2362015F0043066F /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0109B35C2362015F0043066F /* AccountViewController.swift */; };
+		0109B36023620BA20043066F /* ModalController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0109B35F23620BA20043066F /* ModalController.swift */; };
+		0109B36223620F9C0043066F /* ChoiceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0109B36123620F9C0043066F /* ChoiceController.swift */; };
 		01134A46235A0BCC00C04530 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01134A45235A0BCC00C04530 /* AppDelegate.swift */; };
 		01134A48235A0BCC00C04530 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01134A47235A0BCC00C04530 /* SceneDelegate.swift */; };
 		01134A4A235A0BCC00C04530 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01134A49235A0BCC00C04530 /* ViewController.swift */; };
@@ -30,6 +32,8 @@
 
 /* Begin PBXFileReference section */
 		0109B35C2362015F0043066F /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
+		0109B35F23620BA20043066F /* ModalController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalController.swift; sourceTree = "<group>"; };
+		0109B36123620F9C0043066F /* ChoiceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoiceController.swift; sourceTree = "<group>"; };
 		01134A42235A0BCC00C04530 /* UniClass.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UniClass.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		01134A45235A0BCC00C04530 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		01134A47235A0BCC00C04530 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -69,6 +73,14 @@
 				0109B35C2362015F0043066F /* AccountViewController.swift */,
 			);
 			path = Accounts;
+			sourceTree = "<group>";
+		};
+		0109B35E23620B8B0043066F /* Modal class */ = {
+			isa = PBXGroup;
+			children = (
+				0109B35F23620BA20043066F /* ModalController.swift */,
+			);
+			path = "Modal class";
 			sourceTree = "<group>";
 		};
 		01134A39235A0BCC00C04530 = {
@@ -118,6 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				0172E83F235F69220090E8E4 /* NotebookSpecificTopics.swift */,
+				0109B36123620F9C0043066F /* ChoiceController.swift */,
 			);
 			path = More;
 			sourceTree = "<group>";
@@ -138,6 +151,7 @@
 		9A6F8D0D235EEBC4005FA839 /* Groups */ = {
 			isa = PBXGroup;
 			children = (
+				0109B35E23620B8B0043066F /* Modal class */,
 				9A04ED1A23604A3500E8217C /* GroupViewController.swift */,
 				9A6F8D12235EF0E4005FA839 /* GroupViewCell.swift */,
 				9A6F8D10235EECC5005FA839 /* cellGroups.swift */,
@@ -223,6 +237,7 @@
 				012BE910235F5FB400BFB67D /* whatshotClass.swift in Sources */,
 				0172E840235F69220090E8E4 /* NotebookSpecificTopics.swift in Sources */,
 				01134A4A235A0BCC00C04530 /* ViewController.swift in Sources */,
+				0109B36223620F9C0043066F /* ChoiceController.swift in Sources */,
 				9A04ED1B23604A3500E8217C /* GroupViewController.swift in Sources */,
 				01134A46235A0BCC00C04530 /* AppDelegate.swift in Sources */,
 				01C5EF672360276200F8BA4E /* NotebookTableSubClass.swift in Sources */,
@@ -230,6 +245,7 @@
 				9A6F8D11235EECC5005FA839 /* cellGroups.swift in Sources */,
 				01E56B08235E0FCA00CF377E /* NotebookTableViewCell.swift in Sources */,
 				9AC1CCB923605917000E0E0E /* GroupChatViewController.swift in Sources */,
+				0109B36023620BA20043066F /* ModalController.swift in Sources */,
 				9A6F8D13235EF0E4005FA839 /* GroupViewCell.swift in Sources */,
 				01E56B04235E0B4C00CF377E /* TableViewSuperClass.swift in Sources */,
 				01134A48235A0BCC00C04530 /* SceneDelegate.swift in Sources */,

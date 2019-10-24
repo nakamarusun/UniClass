@@ -184,12 +184,71 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="hiJ-MR-vDY" kind="relationship" relationship="rootViewController" id="X2L-f3-ih2"/>
+                        <segue destination="VZB-jR-3v1" kind="relationship" relationship="rootViewController" id="xEA-0V-WM9"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZM8-qH-rjh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="875" y="844"/>
+        </scene>
+        <!--Notebook-->
+        <scene sceneID="yLv-3y-tRi">
+            <objects>
+                <viewController id="VZB-jR-3v1" customClass="ChoiceController" customModule="UniClass" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="x5U-tR-PPb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="topic" translatesAutoresizingMaskIntoConstraints="NO" id="OR4-zV-zSe">
+                                <rect key="frame" x="32" y="342" width="160" height="160"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="answer" translatesAutoresizingMaskIntoConstraints="NO" id="6IP-oE-FwP">
+                                <rect key="frame" x="222" y="342" width="160" height="160"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Studies" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hFI-tU-fRK">
+                                <rect key="frame" x="83" y="510" width="58" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Quizzes" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4U6-vh-GwZ">
+                                <rect key="frame" x="271" y="509" width="62" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2jh-Mj-Gp3">
+                                <rect key="frame" x="32" y="342" width="160" height="188"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="studiesButton:" destination="VZB-jR-3v1" eventType="touchUpInside" id="sRe-te-bhF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Me0-mp-rzo">
+                                <rect key="frame" x="222" y="341" width="160" height="188"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="quizzesButton:" destination="VZB-jR-3v1" eventType="touchUpInside" id="kme-7i-NJ5"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="Y5A-da-K24"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Notebook" id="hAJ-p6-6rW"/>
+                    <connections>
+                        <outlet property="quizzesImage" destination="6IP-oE-FwP" id="gTF-ld-NKo"/>
+                        <outlet property="studiesImage" destination="OR4-zV-zSe" id="tBP-10-e7z"/>
+                        <segue destination="hiJ-MR-vDY" kind="show" identifier="goToTopics" id="bWa-4y-FZX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uCe-bc-We1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1640.5797101449277" y="843.75"/>
         </scene>
         <!--Topics-->
         <scene sceneID="RlG-qO-egl">
@@ -258,7 +317,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BZF-UI-J9C" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1647.826086956522" y="843.75"/>
+            <point key="canvasLocation" x="2412" y="844"/>
         </scene>
         <!--Notebook Specific Topics-->
         <scene sceneID="UxQ-CD-GXO">
@@ -319,7 +378,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GGh-62-0mX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2411.594202898551" y="843.75"/>
+            <point key="canvasLocation" x="3212" y="844"/>
         </scene>
         <!--Group-->
         <scene sceneID="Q6I-ra-WJF">
@@ -414,7 +473,7 @@
                     <connections>
                         <outlet property="TableViewGroup" destination="hKi-tw-QME" id="Vcl-0v-zFe"/>
                         <segue destination="qea-LJ-8OZ" kind="show" identifier="goToGroupChat" id="wRr-3u-q1s"/>
-                        <segue destination="jb0-QE-pUd" kind="show" identifier="goToGroupSelection" id="Fwl-h0-1TZ"/>
+                        <segue destination="hiJ-MR-vDY" kind="show" identifier="goToGroupSelection" id="hY9-E9-p3p"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="U9F-O8-4YA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -477,17 +536,17 @@
                     </navigationItem>
                     <connections>
                         <segue destination="ljQ-m4-BKC" kind="presentation" identifier="showModalMore" id="gP5-sY-JjA"/>
-                        <segue destination="wmf-BZ-Vvq" kind="presentation" identifier="showModalAdd" id="LqK-eW-6nm"/>
+                        <segue destination="wmf-BZ-Vvq" kind="presentation" identifier="showModalAdd" id="Z7M-u8-LFy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lsM-zw-0Rp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2439" y="1568"/>
         </scene>
-        <!--View Controller-->
+        <!--Modal Controller-->
         <scene sceneID="o9d-4T-zXv">
             <objects>
-                <viewController id="ljQ-m4-BKC" sceneMemberID="viewController">
+                <viewController id="ljQ-m4-BKC" customClass="ModalController" customModule="UniClass" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" userInteractionEnabled="NO" contentMode="scaleToFill" id="JfN-Tw-K33">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -537,6 +596,7 @@
                         <viewLayoutGuide key="safeArea" id="ki3-bv-Tty"/>
                     </view>
                     <navigationItem key="navigationItem" id="uD7-iM-Fbb"/>
+                    <value key="contentSizeForViewInPopover" type="size" width="414" height="100"/>
                     <size key="freeformSize" width="414" height="100"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dMe-2j-drL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -902,10 +962,10 @@
             </objects>
             <point key="canvasLocation" x="874" y="113"/>
         </scene>
-        <!--View Controller-->
+        <!--Modal Controller-->
         <scene sceneID="ga2-YG-4Kj">
             <objects>
-                <viewController id="wmf-BZ-Vvq" sceneMemberID="viewController">
+                <viewController id="wmf-BZ-Vvq" customClass="ModalController" customModule="UniClass" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" userInteractionEnabled="NO" contentMode="scaleToFill" id="A19-WU-EM4">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -945,6 +1005,7 @@
                         <viewLayoutGuide key="safeArea" id="hfv-sq-hXg"/>
                     </view>
                     <navigationItem key="navigationItem" id="MfS-AM-SQf"/>
+                    <value key="contentSizeForViewInPopover" type="size" width="414" height="100"/>
                     <size key="freeformSize" width="414" height="100"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FPa-HH-lWy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -953,6 +1014,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="answer" width="565" height="561"/>
         <image name="bookmark.fill" catalog="system" width="56" height="64"/>
         <image name="camera" catalog="system" width="64" height="48"/>
         <image name="checkmark.circle" catalog="system" width="64" height="60"/>
@@ -969,9 +1031,10 @@
         <image name="person.fill" catalog="system" width="64" height="60"/>
         <image name="plus.circle" catalog="system" width="64" height="60"/>
         <image name="questionmark.circle" catalog="system" width="64" height="60"/>
+        <image name="topic" width="800" height="800"/>
         <image name="upoin" width="1700" height="1700"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Fwl-h0-1TZ"/>
+        <segue reference="hY9-E9-p3p"/>
     </inferredMetricsTieBreakers>
 </document>
