@@ -10,6 +10,14 @@ import UIKit
 
 class GroupChatViewController: UIViewController {
     
+    @IBAction func moreButton(_ sender: Any) {
+        performSegue(withIdentifier: "showModalMore", sender: nil)
+    }
+
+    @IBAction func addButton(_ sender: Any) {
+        performSegue(withIdentifier: "showModalAdd", sender: nil)
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
         

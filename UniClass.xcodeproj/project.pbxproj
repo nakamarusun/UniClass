@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0109B35D2362015F0043066F /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0109B35C2362015F0043066F /* AccountViewController.swift */; };
 		01134A46235A0BCC00C04530 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01134A45235A0BCC00C04530 /* AppDelegate.swift */; };
 		01134A48235A0BCC00C04530 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01134A47235A0BCC00C04530 /* SceneDelegate.swift */; };
 		01134A4A235A0BCC00C04530 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01134A49235A0BCC00C04530 /* ViewController.swift */; };
@@ -28,6 +29,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0109B35C2362015F0043066F /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
 		01134A42235A0BCC00C04530 /* UniClass.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UniClass.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		01134A45235A0BCC00C04530 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		01134A47235A0BCC00C04530 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -61,6 +63,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0109B35B2361EA5C0043066F /* Accounts */ = {
+			isa = PBXGroup;
+			children = (
+				0109B35C2362015F0043066F /* AccountViewController.swift */,
+			);
+			path = Accounts;
+			sourceTree = "<group>";
+		};
 		01134A39235A0BCC00C04530 = {
 			isa = PBXGroup;
 			children = (
@@ -80,6 +90,7 @@
 		01134A44235A0BCC00C04530 /* UniClass */ = {
 			isa = PBXGroup;
 			children = (
+				0109B35B2361EA5C0043066F /* Accounts */,
 				012BE90E235F5F8D00BFB67D /* Home */,
 				01E56B09235E10CF00CF377E /* Notebook */,
 				9A6F8D0D235EEBC4005FA839 /* Groups */,
@@ -208,6 +219,7 @@
 			files = (
 				01C5EF6B23602E9A00F8BA4E /* NotebookTableCellSubClass.swift in Sources */,
 				012BE914235F618400BFB67D /* whatshotCollectionViewCell.swift in Sources */,
+				0109B35D2362015F0043066F /* AccountViewController.swift in Sources */,
 				012BE910235F5FB400BFB67D /* whatshotClass.swift in Sources */,
 				0172E840235F69220090E8E4 /* NotebookSpecificTopics.swift in Sources */,
 				01134A4A235A0BCC00C04530 /* ViewController.swift in Sources */,
