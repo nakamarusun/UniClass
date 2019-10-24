@@ -47,7 +47,7 @@ class EditProfileViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        var vc = segue.destination as! AccountView
+        let vc = segue.destination as! AccountView
         vc.finalName = self.nameText
         vc.finalEmail = self.emailText
         vc.finalBio = self.bioText

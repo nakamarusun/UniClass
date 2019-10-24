@@ -66,12 +66,12 @@
 		01134A44235A0BCC00C04530 /* UniClass */ = {
 			isa = PBXGroup;
 			children = (
-				DE965072235EF43F0016A817 /* Accounts */,
 				01E56B09235E10CF00CF377E /* Notebook */,
 				01134A45235A0BCC00C04530 /* AppDelegate.swift */,
 				01134A47235A0BCC00C04530 /* SceneDelegate.swift */,
 				01134A49235A0BCC00C04530 /* ViewController.swift */,
 				01134A4B235A0BCC00C04530 /* Main.storyboard */,
+				DE965075235EF5130016A817 /* AccountView.swift */,
 				DE0B901E236052510085EFC6 /* EditProfileViewController.swift */,
 				01134A4E235A0BCD00C04530 /* Assets.xcassets */,
 				01134A50235A0BCD00C04530 /* LaunchScreen.storyboard */,
@@ -88,14 +88,6 @@
 				01E56B0C235E11A900CF377E /* StandardCell.swift */,
 			);
 			path = Notebook;
-			sourceTree = "<group>";
-		};
-		DE965072235EF43F0016A817 /* Accounts */ = {
-			isa = PBXGroup;
-			children = (
-				DE965075235EF5130016A817 /* AccountView.swift */,
-			);
-			path = Accounts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
