@@ -11,4 +11,5 @@ import UIKit
 class whatshotCollectionViewCell: UICollectionViewCell {
 
     @IBOutlet weak var cellImage: UIImageView!
+    @IBOutlet weak var cellButton: UIButton!
 }

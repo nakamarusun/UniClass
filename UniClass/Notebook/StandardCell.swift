@@ -33,3 +33,28 @@ class StandardCell {
     }
     
 }
+
+class TopicClass {
+    
+    var cellImage: UIImage
+    var cellName: String
+    
+    init() {
+        
+        cellImage = UIImage(named: "Nyes")!
+        cellName = "NULL"
+    }
+    
+    init(cellImage: UIImage, cellName: String) {
+        
+        self.cellImage = cellImage
+        self.cellName = cellName
+        
+    }
+    
+    init(cellName: String) {
+        
+        self.cellImage = UIImage(named: "Nyes")!
+        self.cellName = cellName
+    }
+}
