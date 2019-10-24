@@ -27,15 +27,6 @@
                                 <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <tabBar contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0hx-XH-igC">
-                                <rect key="frame" x="0.0" y="779" width="414" height="83"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <items>
-                                    <tabBarItem title="Notebook" image="bookmark.fill" catalog="system" id="sC1-9y-Hlu"/>
-                                    <tabBarItem title="Home" image="house.fill" catalog="system" id="7EE-RX-dRu"/>
-                                    <tabBarItem title="Account" image="person.fill" catalog="system" id="rfS-cA-4Jf"/>
-                                </items>
-                            </tabBar>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Per alumni, ad alumni" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F2F-Fq-aDS">
                                 <rect key="frame" x="135" y="574" width="144" height="17"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
@@ -55,7 +46,6 @@
                             <constraint firstItem="F2F-Fq-aDS" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" constant="134.5" id="14u-K4-tf6"/>
                             <constraint firstItem="cdV-KL-3KR" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="1TW-gr-pbH"/>
                             <constraint firstItem="j7p-OX-pNu" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" constant="96" id="3Tp-CZ-LWi"/>
-                            <constraint firstItem="0hx-XH-igC" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="5Iu-8R-hUe"/>
                             <constraint firstItem="cdV-KL-3KR" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" multiplier="0.76" id="7qN-R0-fwm"/>
                             <constraint firstItem="F2F-Fq-aDS" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="FbY-pt-jyL"/>
                             <constraint firstItem="j7p-OX-pNu" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" constant="39" id="Ufx-Ly-uqf"/>
@@ -72,8 +62,5 @@
     </scenes>
     <resources>
         <image name="Untitled-1" width="2048" height="2048"/>
-        <image name="bookmark.fill" catalog="system" width="56" height="64"/>
-        <image name="house.fill" catalog="system" width="64" height="52"/>
-        <image name="person.fill" catalog="system" width="64" height="60"/>
     </resources>
 </document>

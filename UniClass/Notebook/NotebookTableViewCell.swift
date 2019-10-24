@@ -9,10 +9,6 @@
 import UIKit
 
 class NotebookTableViewCell: UITableViewCell {
-
-    @IBOutlet weak var CellSubtitle: UILabel!
-    @IBOutlet weak var cellName: UILabel!
-    @IBOutlet weak var cellImage: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
