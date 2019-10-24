@@ -21,8 +21,6 @@
 		01E56B04235E0B4C00CF377E /* TableViewSuperClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E56B03235E0B4C00CF377E /* TableViewSuperClass.swift */; };
 		01E56B08235E0FCA00CF377E /* NotebookTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E56B07235E0FCA00CF377E /* NotebookTableViewCell.swift */; };
 		01E56B0D235E11A900CF377E /* StandardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E56B0C235E11A900CF377E /* StandardCell.swift */; };
-		DE0B901F236052510085EFC6 /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0B901E236052510085EFC6 /* EditProfileViewController.swift */; };
-		DE965076235EF5130016A817 /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE965075235EF5130016A817 /* AccountView.swift */; };
 		9A04ED1B23604A3500E8217C /* GroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A04ED1A23604A3500E8217C /* GroupViewController.swift */; };
 		9A6F8D11235EECC5005FA839 /* cellGroups.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6F8D10235EECC5005FA839 /* cellGroups.swift */; };
 		9A6F8D13235EF0E4005FA839 /* GroupViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6F8D12235EF0E4005FA839 /* GroupViewCell.swift */; };
@@ -46,13 +44,10 @@
 		01E56B03235E0B4C00CF377E /* TableViewSuperClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewSuperClass.swift; sourceTree = "<group>"; };
 		01E56B07235E0FCA00CF377E /* NotebookTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotebookTableViewCell.swift; sourceTree = "<group>"; };
 		01E56B0C235E11A900CF377E /* StandardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardCell.swift; sourceTree = "<group>"; };
-		DE0B901E236052510085EFC6 /* EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
-		DE965075235EF5130016A817 /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
 		9A04ED1A23604A3500E8217C /* GroupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupViewController.swift; sourceTree = "<group>"; };
 		9A6F8D10235EECC5005FA839 /* cellGroups.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cellGroups.swift; sourceTree = "<group>"; };
 		9A6F8D12235EF0E4005FA839 /* GroupViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupViewCell.swift; sourceTree = "<group>"; };
 		9AC1CCB823605917000E0E0E /* GroupChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupChatViewController.swift; sourceTree = "<group>"; };
-
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,14 +80,12 @@
 		01134A44235A0BCC00C04530 /* UniClass */ = {
 			isa = PBXGroup;
 			children = (
-				DE965072235EF43F0016A817 /* Accounts */,
 				012BE90E235F5F8D00BFB67D /* Home */,
 				01E56B09235E10CF00CF377E /* Notebook */,
 				9A6F8D0D235EEBC4005FA839 /* Groups */,
 				01134A45235A0BCC00C04530 /* AppDelegate.swift */,
 				01134A47235A0BCC00C04530 /* SceneDelegate.swift */,
 				01134A4B235A0BCC00C04530 /* Main.storyboard */,
-				DE0B901E236052510085EFC6 /* EditProfileViewController.swift */,
 				01134A4E235A0BCD00C04530 /* Assets.xcassets */,
 				01134A50235A0BCD00C04530 /* LaunchScreen.storyboard */,
 				01134A53235A0BCD00C04530 /* Info.plist */,
@@ -131,12 +124,6 @@
 			path = Notebook;
 			sourceTree = "<group>";
 		};
-		DE965072235EF43F0016A817 /* Accounts */ = {
-			isa = PBXGroup;
-			children = (
-				DE965075235EF5130016A817 /* AccountView.swift */,
-			);
-			path = Accounts;
 		9A6F8D0D235EEBC4005FA839 /* Groups */ = {
 			isa = PBXGroup;
 			children = (
@@ -219,7 +206,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE0B901F236052510085EFC6 /* EditProfileViewController.swift in Sources */,
 				01C5EF6B23602E9A00F8BA4E /* NotebookTableCellSubClass.swift in Sources */,
 				012BE914235F618400BFB67D /* whatshotCollectionViewCell.swift in Sources */,
 				012BE910235F5FB400BFB67D /* whatshotClass.swift in Sources */,
@@ -231,8 +217,6 @@
 				01E56B0D235E11A900CF377E /* StandardCell.swift in Sources */,
 				9A6F8D11235EECC5005FA839 /* cellGroups.swift in Sources */,
 				01E56B08235E0FCA00CF377E /* NotebookTableViewCell.swift in Sources */,
-				DE965076235EF5130016A817 /* AccountView.swift in Sources */,
-				01E56B04235E0B4C00CF377E /* NotebookViewTable.swift in Sources */,
 				9AC1CCB923605917000E0E0E /* GroupChatViewController.swift in Sources */,
 				9A6F8D13235EF0E4005FA839 /* GroupViewCell.swift in Sources */,
 				01E56B04235E0B4C00CF377E /* TableViewSuperClass.swift in Sources */,
