@@ -16,7 +16,6 @@
 		01E56B04235E0B4C00CF377E /* NotebookViewTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E56B03235E0B4C00CF377E /* NotebookViewTable.swift */; };
 		01E56B08235E0FCA00CF377E /* NotebookTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E56B07235E0FCA00CF377E /* NotebookTableViewCell.swift */; };
 		01E56B0D235E11A900CF377E /* StandardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E56B0C235E11A900CF377E /* StandardCell.swift */; };
-		DE0B901F236052510085EFC6 /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0B901E236052510085EFC6 /* EditProfileViewController.swift */; };
 		DE965076235EF5130016A817 /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE965075235EF5130016A817 /* AccountView.swift */; };
 /* End PBXBuildFile section */
 
@@ -32,7 +31,6 @@
 		01E56B03235E0B4C00CF377E /* NotebookViewTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotebookViewTable.swift; sourceTree = "<group>"; };
 		01E56B07235E0FCA00CF377E /* NotebookTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotebookTableViewCell.swift; sourceTree = "<group>"; };
 		01E56B0C235E11A900CF377E /* StandardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardCell.swift; sourceTree = "<group>"; };
-		DE0B901E236052510085EFC6 /* EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
 		DE965075235EF5130016A817 /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -72,7 +70,6 @@
 				01134A49235A0BCC00C04530 /* ViewController.swift */,
 				01134A4B235A0BCC00C04530 /* Main.storyboard */,
 				DE965075235EF5130016A817 /* AccountView.swift */,
-				DE0B901E236052510085EFC6 /* EditProfileViewController.swift */,
 				01134A4E235A0BCD00C04530 /* Assets.xcassets */,
 				01134A50235A0BCD00C04530 /* LaunchScreen.storyboard */,
 				01134A53235A0BCD00C04530 /* Info.plist */,
@@ -161,7 +158,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE0B901F236052510085EFC6 /* EditProfileViewController.swift in Sources */,
 				01134A4A235A0BCC00C04530 /* ViewController.swift in Sources */,
 				01134A46235A0BCC00C04530 /* AppDelegate.swift in Sources */,
 				01E56B0D235E11A900CF377E /* StandardCell.swift in Sources */,
