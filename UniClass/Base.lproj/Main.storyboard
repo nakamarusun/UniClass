@@ -130,22 +130,6 @@
             </objects>
             <point key="canvasLocation" x="917" y="12"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="86W-lI-cy6">
-            <objects>
-                <viewController id="fe3-bA-DJt" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="And-go-8ay">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="ElD-lg-HVp"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="AkH-kN-wY9"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Ri8-3w-hNK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2770" y="113"/>
-        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="l7I-Ts-CNK">
             <objects>
@@ -429,22 +413,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I8f-up-prw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1670" y="2392"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="lQF-UD-Nht">
-            <objects>
-                <viewController id="xZH-xu-m2q" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="wcf-uI-JsK">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="NE7-Hg-NE8"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="hI4-JM-uTA"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="1yH-uk-ogc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1640" y="3204"/>
         </scene>
         <!--Edit Profile-->
         <scene sceneID="e9n-tE-3rC">
