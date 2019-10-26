@@ -56,6 +56,9 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         whatshotImageArray = []
         whatshotImageArray.append(whatshotClass(cellImage: UIImage(named: "biologi2")!, cellData: ""))
         whatshotImageArray.append(whatshotClass(cellImage: UIImage(named: "biologi3")!, cellData: ""))
-
+        
+        
+        
+        whatshotImageArray.append(whatshotClass(cellImage: UIImage(named: "seemorearticles")!, cellData: ""))
     }
 }

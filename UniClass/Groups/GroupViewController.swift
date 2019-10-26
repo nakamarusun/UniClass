@@ -33,7 +33,9 @@ class GroupViewController: UIViewController, UITableViewDataSource, UITableViewD
     }
     
     @IBAction func newGroup(_ sender: Any) {
+        
         performSegue(withIdentifier: "goToGroupSelection", sender: nil)
+        GlobalVariables.choices = "groups"
     }
     
     

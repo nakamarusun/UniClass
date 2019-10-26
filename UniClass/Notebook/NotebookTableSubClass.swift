@@ -11,6 +11,7 @@ import UIKit
 class NotebookTableSubClass: NotebookViewTable {
     
     @IBOutlet weak var NotebookController: UITableView!
+    var choice: String!
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
@@ -32,6 +33,7 @@ class NotebookTableSubClass: NotebookViewTable {
         super.viewDidLoad()
         self.NotebookController.dataSource = self
         self.NotebookController.delegate = self
+        print("Choices: \(GlobalVariables.choices)")
         cellArray.append(StandardCell(cellName: "Matematika", cellSubtitle: "Math is the only place where truth and beauty mean same thing", cellImage: UIImage(named: "math1" )!) )
         cellArray.append(StandardCell(cellName: "Fisika", cellSubtitle: "What man calls God , The other call the law of physics", cellImage:UIImage (named: "fisika1")!) )
         cellArray.append(StandardCell(cellName: "Kimia", cellSubtitle: "Chemistry is like cooking ", cellImage:UIImage (named: "kimia1")!) )

@@ -18,6 +18,10 @@
 		01134A52235A0BCD00C04530 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01134A50235A0BCD00C04530 /* LaunchScreen.storyboard */; };
 		012BE910235F5FB400BFB67D /* whatshotClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012BE90F235F5FB400BFB67D /* whatshotClass.swift */; };
 		012BE914235F618400BFB67D /* whatshotCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012BE913235F618400BFB67D /* whatshotCollectionViewCell.swift */; };
+		0134DBAD2362E31700C0C3C8 /* GlobalVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0134DBAC2362E31700C0C3C8 /* GlobalVariables.swift */; };
+		0134DBAF2364447800C0C3C8 /* EditAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0134DBAE2364447800C0C3C8 /* EditAccountViewController.swift */; };
+		0134DBB323644F2200C0C3C8 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0134DBB223644F2200C0C3C8 /* UserData.swift */; };
+		0134DBD923646DBE00C0C3C8 /* UniClass.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0134DBD723646DBE00C0C3C8 /* UniClass.xcdatamodeld */; };
 		0172E840235F69220090E8E4 /* NotebookSpecificTopics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0172E83F235F69220090E8E4 /* NotebookSpecificTopics.swift */; };
 		01C5EF672360276200F8BA4E /* NotebookTableSubClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01C5EF662360276200F8BA4E /* NotebookTableSubClass.swift */; };
 		01C5EF6B23602E9A00F8BA4E /* NotebookTableCellSubClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01C5EF6A23602E9A00F8BA4E /* NotebookTableCellSubClass.swift */; };
@@ -44,6 +48,10 @@
 		01134A53235A0BCD00C04530 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		012BE90F235F5FB400BFB67D /* whatshotClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = whatshotClass.swift; sourceTree = "<group>"; };
 		012BE913235F618400BFB67D /* whatshotCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = whatshotCollectionViewCell.swift; sourceTree = "<group>"; };
+		0134DBAC2362E31700C0C3C8 /* GlobalVariables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalVariables.swift; sourceTree = "<group>"; };
+		0134DBAE2364447800C0C3C8 /* EditAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditAccountViewController.swift; sourceTree = "<group>"; };
+		0134DBB223644F2200C0C3C8 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
+		0134DBD823646DBE00C0C3C8 /* UniClass.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = UniClass.xcdatamodel; sourceTree = "<group>"; };
 		0172E83F235F69220090E8E4 /* NotebookSpecificTopics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotebookSpecificTopics.swift; sourceTree = "<group>"; };
 		01C5EF662360276200F8BA4E /* NotebookTableSubClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotebookTableSubClass.swift; sourceTree = "<group>"; };
 		01C5EF6A23602E9A00F8BA4E /* NotebookTableCellSubClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotebookTableCellSubClass.swift; sourceTree = "<group>"; };
@@ -71,6 +79,8 @@
 			isa = PBXGroup;
 			children = (
 				0109B35C2362015F0043066F /* AccountViewController.swift */,
+				0134DBAE2364447800C0C3C8 /* EditAccountViewController.swift */,
+				0134DBB223644F2200C0C3C8 /* UserData.swift */,
 			);
 			path = Accounts;
 			sourceTree = "<group>";
@@ -102,16 +112,15 @@
 		01134A44235A0BCC00C04530 /* UniClass */ = {
 			isa = PBXGroup;
 			children = (
+				0134DBDA23646DCC00C0C3C8 /* Essentials */,
 				0109B35B2361EA5C0043066F /* Accounts */,
 				012BE90E235F5F8D00BFB67D /* Home */,
 				01E56B09235E10CF00CF377E /* Notebook */,
 				9A6F8D0D235EEBC4005FA839 /* Groups */,
-				01134A45235A0BCC00C04530 /* AppDelegate.swift */,
-				01134A47235A0BCC00C04530 /* SceneDelegate.swift */,
 				01134A4B235A0BCC00C04530 /* Main.storyboard */,
 				01134A4E235A0BCD00C04530 /* Assets.xcassets */,
-				01134A50235A0BCD00C04530 /* LaunchScreen.storyboard */,
-				01134A53235A0BCD00C04530 /* Info.plist */,
+				0134DBAC2362E31700C0C3C8 /* GlobalVariables.swift */,
+				0134DBD723646DBE00C0C3C8 /* UniClass.xcdatamodeld */,
 			);
 			path = UniClass;
 			sourceTree = "<group>";
@@ -124,6 +133,17 @@
 				012BE913235F618400BFB67D /* whatshotCollectionViewCell.swift */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		0134DBDA23646DCC00C0C3C8 /* Essentials */ = {
+			isa = PBXGroup;
+			children = (
+				01134A45235A0BCC00C04530 /* AppDelegate.swift */,
+				01134A47235A0BCC00C04530 /* SceneDelegate.swift */,
+				01134A50235A0BCD00C04530 /* LaunchScreen.storyboard */,
+				01134A53235A0BCD00C04530 /* Info.plist */,
+			);
+			path = Essentials;
 			sourceTree = "<group>";
 		};
 		0172E83E235F68E40090E8E4 /* More */ = {
@@ -240,9 +260,13 @@
 				0109B36223620F9C0043066F /* ChoiceController.swift in Sources */,
 				9A04ED1B23604A3500E8217C /* GroupViewController.swift in Sources */,
 				01134A46235A0BCC00C04530 /* AppDelegate.swift in Sources */,
+				0134DBB323644F2200C0C3C8 /* UserData.swift in Sources */,
 				01C5EF672360276200F8BA4E /* NotebookTableSubClass.swift in Sources */,
+				0134DBAD2362E31700C0C3C8 /* GlobalVariables.swift in Sources */,
 				01E56B0D235E11A900CF377E /* StandardCell.swift in Sources */,
+				0134DBAF2364447800C0C3C8 /* EditAccountViewController.swift in Sources */,
 				9A6F8D11235EECC5005FA839 /* cellGroups.swift in Sources */,
+				0134DBD923646DBE00C0C3C8 /* UniClass.xcdatamodeld in Sources */,
 				01E56B08235E0FCA00CF377E /* NotebookTableViewCell.swift in Sources */,
 				9AC1CCB923605917000E0E0E /* GroupChatViewController.swift in Sources */,
 				0109B36023620BA20043066F /* ModalController.swift in Sources */,
@@ -446,6 +470,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		0134DBD723646DBE00C0C3C8 /* UniClass.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				0134DBD823646DBE00C0C3C8 /* UniClass.xcdatamodel */,
+			);
+			currentVersion = 0134DBD823646DBE00C0C3C8 /* UniClass.xcdatamodel */;
+			path = UniClass.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 01134A3A235A0BCC00C04530 /* Project object */;
 }

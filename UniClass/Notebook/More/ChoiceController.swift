@@ -16,11 +16,13 @@ class ChoiceController: UIViewController {
     @IBAction func studiesButton(_ sender: Any) {
         
         performSegue(withIdentifier: "goToTopics", sender: nil)
+        GlobalVariables.choices = "studies"
     }
     
     @IBAction func quizzesButton(_ sender: Any) {
         
         performSegue(withIdentifier: "goToTopics", sender: nil)
+        GlobalVariables.choices = "quizzes"
     }
     
     
@@ -31,7 +33,6 @@ class ChoiceController: UIViewController {
         
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
     }
     
 
