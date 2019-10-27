@@ -59,9 +59,30 @@ func fetchUserData() -> [String: String] {
     
     request.returnsObjectsAsFaults = false
     
-    
     do {
         let results = try context.fetch(request)
+        
+        if results.count == 0 {
+            let appDelegate = UIApplication.shared.delegate as! AppDelegate
+            let context = appDelegate.persistentContainer.viewContext
+            let object =  NSEntityDescription.insertNewObject(forEntityName: "UserProfile", into: context)
+            
+            object.setValue("User1723861", forKey: "username")
+            object.setValue("user@uniclass.com", forKey: "email")
+            object.setValue(UserData.bio, forKey: "bio")
+            object.setValue("High School", forKey: "academicBio")
+            object.setValue("12th Grade", forKey: "classBio")
+            object.setValue("Calculus", forKey: "favSubject")
+            object.setValue("Calculus - Make it easy !", forKey: "favGroup")
+            object.setValue(UserData.image, forKey: "image")
+            
+            do {
+                try context.save()
+                print("[DEBUG MESSAGE] Saved")
+            } catch {
+                print("[DEBUG MESSAGE] FAILED TO SAVE")
+            }
+        }
     
         let username = (results[results.count-1] as AnyObject).value(forKey: "username") as? String
         let email = (results[results.count-1] as AnyObject).value(forKey: "email") as? String

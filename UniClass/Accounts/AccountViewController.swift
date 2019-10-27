@@ -30,7 +30,7 @@ class AccountViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        scrollView.contentSize = CGSize(width: 414, height: 1229)
+        scrollView.contentSize = CGSize(width: 414, height: 1329)
         profileImage.layer.cornerRadius = 75.0
         profileImage.layer.masksToBounds = true
         

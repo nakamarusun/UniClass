@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,7 +14,6 @@
 		01134A48235A0BCC00C04530 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01134A47235A0BCC00C04530 /* SceneDelegate.swift */; };
 		01134A4A235A0BCC00C04530 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01134A49235A0BCC00C04530 /* ViewController.swift */; };
 		01134A4D235A0BCC00C04530 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01134A4B235A0BCC00C04530 /* Main.storyboard */; };
-		01134A4F235A0BCD00C04530 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01134A4E235A0BCD00C04530 /* Assets.xcassets */; };
 		01134A52235A0BCD00C04530 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01134A50235A0BCD00C04530 /* LaunchScreen.storyboard */; };
 		012BE910235F5FB400BFB67D /* whatshotClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012BE90F235F5FB400BFB67D /* whatshotClass.swift */; };
 		012BE914235F618400BFB67D /* whatshotCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012BE913235F618400BFB67D /* whatshotCollectionViewCell.swift */; };
@@ -23,6 +22,8 @@
 		0134DBB323644F2200C0C3C8 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0134DBB223644F2200C0C3C8 /* UserData.swift */; };
 		0134DBD923646DBE00C0C3C8 /* UniClass.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0134DBD723646DBE00C0C3C8 /* UniClass.xcdatamodeld */; };
 		0134DBDD23649FF200C0C3C8 /* GlobalFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0134DBDC23649FF200C0C3C8 /* GlobalFunctions.swift */; };
+		0134DBDF2365A48300C0C3C8 /* ContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0134DBDE2365A48300C0C3C8 /* ContentViewController.swift */; };
+		0134DBE22365CEA200C0C3C8 /* ContentViewCellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0134DBE12365CEA200C0C3C8 /* ContentViewCellController.swift */; };
 		0172E840235F69220090E8E4 /* NotebookSpecificTopics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0172E83F235F69220090E8E4 /* NotebookSpecificTopics.swift */; };
 		01C5EF672360276200F8BA4E /* NotebookTableSubClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01C5EF662360276200F8BA4E /* NotebookTableSubClass.swift */; };
 		01C5EF6B23602E9A00F8BA4E /* NotebookTableCellSubClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01C5EF6A23602E9A00F8BA4E /* NotebookTableCellSubClass.swift */; };
@@ -33,6 +34,7 @@
 		9A6F8D11235EECC5005FA839 /* cellGroups.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6F8D10235EECC5005FA839 /* cellGroups.swift */; };
 		9A6F8D13235EF0E4005FA839 /* GroupViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6F8D12235EF0E4005FA839 /* GroupViewCell.swift */; };
 		9AC1CCB923605917000E0E0E /* GroupChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC1CCB823605917000E0E0E /* GroupChatViewController.swift */; };
+		A5E4A5728D48848C046DE3CD /* Pods_UniClass.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B6C9EB4C45099903A017C2D /* Pods_UniClass.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,7 +46,6 @@
 		01134A47235A0BCC00C04530 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		01134A49235A0BCC00C04530 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		01134A4C235A0BCC00C04530 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		01134A4E235A0BCD00C04530 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		01134A51235A0BCD00C04530 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		01134A53235A0BCD00C04530 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		012BE90F235F5FB400BFB67D /* whatshotClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = whatshotClass.swift; sourceTree = "<group>"; };
@@ -54,12 +55,17 @@
 		0134DBB223644F2200C0C3C8 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
 		0134DBD823646DBE00C0C3C8 /* UniClass.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = UniClass.xcdatamodel; sourceTree = "<group>"; };
 		0134DBDC23649FF200C0C3C8 /* GlobalFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalFunctions.swift; sourceTree = "<group>"; };
+		0134DBDE2365A48300C0C3C8 /* ContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewController.swift; sourceTree = "<group>"; };
+		0134DBE12365CEA200C0C3C8 /* ContentViewCellController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewCellController.swift; sourceTree = "<group>"; };
 		0172E83F235F69220090E8E4 /* NotebookSpecificTopics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotebookSpecificTopics.swift; sourceTree = "<group>"; };
 		01C5EF662360276200F8BA4E /* NotebookTableSubClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotebookTableSubClass.swift; sourceTree = "<group>"; };
 		01C5EF6A23602E9A00F8BA4E /* NotebookTableCellSubClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotebookTableCellSubClass.swift; sourceTree = "<group>"; };
 		01E56B03235E0B4C00CF377E /* TableViewSuperClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewSuperClass.swift; sourceTree = "<group>"; };
 		01E56B07235E0FCA00CF377E /* NotebookTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotebookTableViewCell.swift; sourceTree = "<group>"; };
 		01E56B0C235E11A900CF377E /* StandardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardCell.swift; sourceTree = "<group>"; };
+		163057A875B962A4EB7B5FAA /* Pods-UniClass.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UniClass.release.xcconfig"; path = "Target Support Files/Pods-UniClass/Pods-UniClass.release.xcconfig"; sourceTree = "<group>"; };
+		2B6C9EB4C45099903A017C2D /* Pods_UniClass.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UniClass.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8765A47B681CBFF8C5E412D0 /* Pods-UniClass.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UniClass.debug.xcconfig"; path = "Target Support Files/Pods-UniClass/Pods-UniClass.debug.xcconfig"; sourceTree = "<group>"; };
 		9A04ED1A23604A3500E8217C /* GroupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupViewController.swift; sourceTree = "<group>"; };
 		9A6F8D10235EECC5005FA839 /* cellGroups.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cellGroups.swift; sourceTree = "<group>"; };
 		9A6F8D12235EF0E4005FA839 /* GroupViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupViewCell.swift; sourceTree = "<group>"; };
@@ -71,6 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5E4A5728D48848C046DE3CD /* Pods_UniClass.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,6 +107,8 @@
 			children = (
 				01134A44235A0BCC00C04530 /* UniClass */,
 				01134A43235A0BCC00C04530 /* Products */,
+				E51F916089C2F76171F8CBD5 /* Pods */,
+				41D453E53336F56946AD02C7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -121,7 +130,6 @@
 				01E56B09235E10CF00CF377E /* Notebook */,
 				9A6F8D0D235EEBC4005FA839 /* Groups */,
 				01134A4B235A0BCC00C04530 /* Main.storyboard */,
-				01134A4E235A0BCD00C04530 /* Assets.xcassets */,
 				0134DBAC2362E31700C0C3C8 /* GlobalVariables.swift */,
 				0134DBD723646DBE00C0C3C8 /* UniClass.xcdatamodeld */,
 				0134DBDC23649FF200C0C3C8 /* GlobalFunctions.swift */,
@@ -149,9 +157,19 @@
 			path = Essentials;
 			sourceTree = "<group>";
 		};
+		0134DBE02365CE7900C0C3C8 /* Content */ = {
+			isa = PBXGroup;
+			children = (
+				0134DBDE2365A48300C0C3C8 /* ContentViewController.swift */,
+				0134DBE12365CEA200C0C3C8 /* ContentViewCellController.swift */,
+			);
+			path = Content;
+			sourceTree = "<group>";
+		};
 		0172E83E235F68E40090E8E4 /* More */ = {
 			isa = PBXGroup;
 			children = (
+				0134DBE02365CE7900C0C3C8 /* Content */,
 				0172E83F235F69220090E8E4 /* NotebookSpecificTopics.swift */,
 				0109B36123620F9C0043066F /* ChoiceController.swift */,
 			);
@@ -171,6 +189,14 @@
 			path = Notebook;
 			sourceTree = "<group>";
 		};
+		41D453E53336F56946AD02C7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2B6C9EB4C45099903A017C2D /* Pods_UniClass.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9A6F8D0D235EEBC4005FA839 /* Groups */ = {
 			isa = PBXGroup;
 			children = (
@@ -183,6 +209,15 @@
 			path = Groups;
 			sourceTree = "<group>";
 		};
+		E51F916089C2F76171F8CBD5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8765A47B681CBFF8C5E412D0 /* Pods-UniClass.debug.xcconfig */,
+				163057A875B962A4EB7B5FAA /* Pods-UniClass.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -190,9 +225,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 01134A56235A0BCD00C04530 /* Build configuration list for PBXNativeTarget "UniClass" */;
 			buildPhases = (
+				C553029625E8F791C53BCCE5 /* [CP] Check Pods Manifest.lock */,
 				01134A3E235A0BCC00C04530 /* Sources */,
 				01134A3F235A0BCC00C04530 /* Frameworks */,
 				01134A40235A0BCC00C04530 /* Resources */,
+				C1BBD331218746412804B7BA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -242,12 +279,53 @@
 			buildActionMask = 2147483647;
 			files = (
 				01134A52235A0BCD00C04530 /* LaunchScreen.storyboard in Resources */,
-				01134A4F235A0BCD00C04530 /* Assets.xcassets in Resources */,
 				01134A4D235A0BCC00C04530 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C1BBD331218746412804B7BA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UniClass/Pods-UniClass-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UniClass/Pods-UniClass-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-UniClass/Pods-UniClass-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C553029625E8F791C53BCCE5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-UniClass-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		01134A3E235A0BCC00C04530 /* Sources */ = {
@@ -270,9 +348,11 @@
 				0134DBAF2364447800C0C3C8 /* EditAccountViewController.swift in Sources */,
 				9A6F8D11235EECC5005FA839 /* cellGroups.swift in Sources */,
 				0134DBDD23649FF200C0C3C8 /* GlobalFunctions.swift in Sources */,
+				0134DBDF2365A48300C0C3C8 /* ContentViewController.swift in Sources */,
 				0134DBD923646DBE00C0C3C8 /* UniClass.xcdatamodeld in Sources */,
 				01E56B08235E0FCA00CF377E /* NotebookTableViewCell.swift in Sources */,
 				9AC1CCB923605917000E0E0E /* GroupChatViewController.swift in Sources */,
+				0134DBE22365CEA200C0C3C8 /* ContentViewCellController.swift in Sources */,
 				0109B36023620BA20043066F /* ModalController.swift in Sources */,
 				9A6F8D13235EF0E4005FA839 /* GroupViewCell.swift in Sources */,
 				01E56B04235E0B4C00CF377E /* TableViewSuperClass.swift in Sources */,
@@ -418,6 +498,7 @@
 		};
 		01134A57235A0BCD00C04530 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8765A47B681CBFF8C5E412D0 /* Pods-UniClass.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -436,6 +517,7 @@
 		};
 		01134A58235A0BCD00C04530 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 163057A875B962A4EB7B5FAA /* Pods-UniClass.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

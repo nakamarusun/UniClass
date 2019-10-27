@@ -18,6 +18,7 @@ class NotebookSpecificTopics: NotebookViewTable {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "menuCell", for: indexPath) as! TopicCell
+
         
         let menu = cellArray[indexPath.row]
         
@@ -73,24 +74,22 @@ class NotebookSpecificTopics: NotebookViewTable {
             cellArray.append(StandardCell(cellName: "Memahami dan Menanggapi Bacaan", cellSubtitle: "Non", cellImage: UIImage(named: "bahasaIndonesia3")!))
             cellArray.append(StandardCell(cellName: "Fakta dan Tanggapan dalam Teks", cellSubtitle: "Non", cellImage: UIImage(named: "bahasaIndonesia1")!))
 
-            
-            
-
-            
             default:
                 cellArray.append(StandardCell())
                 print("SELECTED TOPIC NULL")
         }
     }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.performSegue(withIdentifier: "goToContent", sender: nil)
     }
-    */
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "goToContent" {
+            
+            let detailViewController = segue.destination as! ContentViewController
+            detailViewController.selectedCell = cellArray[TopicsController.indexPathForSelectedRow!.row]
+        }
+    }
 
 }
