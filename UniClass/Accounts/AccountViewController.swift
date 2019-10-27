@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 class AccountViewController: UIViewController {
     
@@ -20,6 +21,8 @@ class AccountViewController: UIViewController {
     @IBOutlet weak var classBio: UILabel!
     @IBOutlet weak var favSubjectBio: UILabel!
     @IBOutlet weak var favGroupBio: UILabel!
+    
+    
     
     @IBAction func AccountSettingButton(_ sender: Any) {
         performSegue(withIdentifier: "goToChangeAccountDetail", sender: nil)
@@ -35,10 +38,18 @@ class AccountViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         
-        usernameBio.text = UserData.username
-        emailBio.text = UserData.email
-        bioBio.text = UserData.bio
-        print("display username: \(UserData.username)")
+        let userprofile = fetchUserData()
+        
+        usernameBio.text = userprofile["usr"]
+        emailBio.text = userprofile["eml"]
+        bioBio.text = userprofile["bio"]
+        academicBio.text = userprofile["acb"]
+        classBio.text = userprofile["ccb"]
+        favGroupBio.text = userprofile["fgp"]
+        favSubjectBio.text = userprofile["fsj"]
+        
+        
+        print("display username: \(userprofile["usr"])")
     }
 
 }

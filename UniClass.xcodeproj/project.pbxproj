@@ -22,6 +22,7 @@
 		0134DBAF2364447800C0C3C8 /* EditAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0134DBAE2364447800C0C3C8 /* EditAccountViewController.swift */; };
 		0134DBB323644F2200C0C3C8 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0134DBB223644F2200C0C3C8 /* UserData.swift */; };
 		0134DBD923646DBE00C0C3C8 /* UniClass.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0134DBD723646DBE00C0C3C8 /* UniClass.xcdatamodeld */; };
+		0134DBDD23649FF200C0C3C8 /* GlobalFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0134DBDC23649FF200C0C3C8 /* GlobalFunctions.swift */; };
 		0172E840235F69220090E8E4 /* NotebookSpecificTopics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0172E83F235F69220090E8E4 /* NotebookSpecificTopics.swift */; };
 		01C5EF672360276200F8BA4E /* NotebookTableSubClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01C5EF662360276200F8BA4E /* NotebookTableSubClass.swift */; };
 		01C5EF6B23602E9A00F8BA4E /* NotebookTableCellSubClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01C5EF6A23602E9A00F8BA4E /* NotebookTableCellSubClass.swift */; };
@@ -52,6 +53,7 @@
 		0134DBAE2364447800C0C3C8 /* EditAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditAccountViewController.swift; sourceTree = "<group>"; };
 		0134DBB223644F2200C0C3C8 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
 		0134DBD823646DBE00C0C3C8 /* UniClass.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = UniClass.xcdatamodel; sourceTree = "<group>"; };
+		0134DBDC23649FF200C0C3C8 /* GlobalFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalFunctions.swift; sourceTree = "<group>"; };
 		0172E83F235F69220090E8E4 /* NotebookSpecificTopics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotebookSpecificTopics.swift; sourceTree = "<group>"; };
 		01C5EF662360276200F8BA4E /* NotebookTableSubClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotebookTableSubClass.swift; sourceTree = "<group>"; };
 		01C5EF6A23602E9A00F8BA4E /* NotebookTableCellSubClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotebookTableCellSubClass.swift; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 		01134A44235A0BCC00C04530 /* UniClass */ = {
 			isa = PBXGroup;
 			children = (
+				01134A53235A0BCD00C04530 /* Info.plist */,
 				0134DBDA23646DCC00C0C3C8 /* Essentials */,
 				0109B35B2361EA5C0043066F /* Accounts */,
 				012BE90E235F5F8D00BFB67D /* Home */,
@@ -121,6 +124,7 @@
 				01134A4E235A0BCD00C04530 /* Assets.xcassets */,
 				0134DBAC2362E31700C0C3C8 /* GlobalVariables.swift */,
 				0134DBD723646DBE00C0C3C8 /* UniClass.xcdatamodeld */,
+				0134DBDC23649FF200C0C3C8 /* GlobalFunctions.swift */,
 			);
 			path = UniClass;
 			sourceTree = "<group>";
@@ -141,7 +145,6 @@
 				01134A45235A0BCC00C04530 /* AppDelegate.swift */,
 				01134A47235A0BCC00C04530 /* SceneDelegate.swift */,
 				01134A50235A0BCD00C04530 /* LaunchScreen.storyboard */,
-				01134A53235A0BCD00C04530 /* Info.plist */,
 			);
 			path = Essentials;
 			sourceTree = "<group>";
@@ -266,6 +269,7 @@
 				01E56B0D235E11A900CF377E /* StandardCell.swift in Sources */,
 				0134DBAF2364447800C0C3C8 /* EditAccountViewController.swift in Sources */,
 				9A6F8D11235EECC5005FA839 /* cellGroups.swift in Sources */,
+				0134DBDD23649FF200C0C3C8 /* GlobalFunctions.swift in Sources */,
 				0134DBD923646DBE00C0C3C8 /* UniClass.xcdatamodeld in Sources */,
 				01E56B08235E0FCA00CF377E /* NotebookTableViewCell.swift in Sources */,
 				9AC1CCB923605917000E0E0E /* GroupChatViewController.swift in Sources */,

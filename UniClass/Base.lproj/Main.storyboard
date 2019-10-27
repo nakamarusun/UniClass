@@ -831,6 +831,9 @@
                                 <rect key="frame" x="129" y="269" width="153" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Change profile picture"/>
+                                <connections>
+                                    <action selector="changeImageButton:" destination="2W1-lc-IUK" eventType="touchUpInside" id="2Ya-1K-fSU"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="C7D-uh-t7A">
                                 <rect key="frame" x="20" y="318" width="374" height="34"/>
@@ -902,6 +905,7 @@
                     <connections>
                         <outlet property="bioText" destination="EjA-zC-nKI" id="uaa-r3-2K1"/>
                         <outlet property="emailText" destination="oSL-lK-45m" id="Qy8-zA-cog"/>
+                        <outlet property="imageEdit" destination="QfR-lJ-aJf" id="09I-6i-ebA"/>
                         <outlet property="usernameText" destination="C7D-uh-t7A" id="BZG-lu-cXY"/>
                     </connections>
                 </viewController>

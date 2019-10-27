@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 class UserData {
     
@@ -17,5 +18,6 @@ class UserData {
     static var classBio = ""
     static var favSubject = ""
     static var favGroup = ""
+    static var image = UIImage(named: "nyes")
     
 }
