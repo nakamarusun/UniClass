@@ -176,7 +176,7 @@
         <scene sceneID="l0W-Es-cMv">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="jb0-QE-pUd" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Notebook" image="bookmark.fill" catalog="system" selectedImage="bookmark.fill" id="ZcE-Uy-Fem"/>
+                    <tabBarItem key="tabBarItem" title="Notebook" image="notebook-2" selectedImage="notebook-2" id="ZcE-Uy-Fem"/>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="jXf-Xh-olz"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="rHj-xA-Whh">
@@ -984,7 +984,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QfR-lJ-aJf">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="person.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="QfR-lJ-aJf">
                                 <rect key="frame" x="132" y="111" width="150" height="150"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -997,72 +997,75 @@
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="C7D-uh-t7A">
-                                <rect key="frame" x="20" y="318" width="374" height="34"/>
+                                <rect key="frame" x="20" y="313" width="374" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Contact Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oSL-lK-45m">
-                                <rect key="frame" x="20" y="360" width="374" height="34"/>
+                                <rect key="frame" x="20" y="355" width="374" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Bio" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EjA-zC-nKI">
-                                <rect key="frame" x="20" y="402" width="374" height="34"/>
+                                <rect key="frame" x="20" y="397" width="374" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Academic Level" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6DS-9M-hwz">
-                                <rect key="frame" x="20" y="642" width="374" height="34"/>
+                                <rect key="frame" x="20" y="582" width="374" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Favorites" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7qg-qw-jUL">
-                                <rect key="frame" x="20" y="464" width="94" height="29"/>
+                                <rect key="frame" x="20" y="439" width="94" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YJJ-Cx-KbL">
-                                <rect key="frame" x="38" y="516" width="163" height="30"/>
+                                <rect key="frame" x="38" y="476" width="163" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Change favorite subject"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="br9-4n-gaR">
-                                <rect key="frame" x="38" y="544" width="153" height="30"/>
+                                <rect key="frame" x="38" y="504" width="153" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Change favorite group"/>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Academic Info" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RAy-vC-GPA">
-                                <rect key="frame" x="20" y="582" width="148" height="29"/>
+                                <rect key="frame" x="20" y="542" width="148" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Class" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Vcn-Oe-lfy">
-                                <rect key="frame" x="20" y="684" width="374" height="34"/>
+                                <rect key="frame" x="20" y="624" width="374" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G2M-pj-GgT">
-                                <rect key="frame" x="152" y="749" width="111" height="30"/>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="5Pi-uE-Dff"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="0gq-B3-VKl">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="ith-Pw-IDW">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="G2M-pj-GgT">
+                                <rect key="frame" x="283" y="7" width="111" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Accept changes"/>
                                 <connections>
                                     <action selector="acceptChangeButton:" destination="2W1-lc-IUK" eventType="touchUpInside" id="YMq-eA-ou0"/>
                                 </connections>
                             </button>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="5Pi-uE-Dff"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="0gq-B3-VKl"/>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="bioText" destination="EjA-zC-nKI" id="uaa-r3-2K1"/>
                         <outlet property="emailText" destination="oSL-lK-45m" id="Qy8-zA-cog"/>
@@ -1110,7 +1113,7 @@
         <scene sceneID="S7Q-88-nhv">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="tf7-Xh-YB5" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Study Groups" image="person.2.square.stack.fill" catalog="system" selectedImage="person.2.square.stack.fill" id="eiK-Mk-hkq"/>
+                    <tabBarItem key="tabBarItem" title="Study Groups" image="group-2" selectedImage="group-2" id="eiK-Mk-hkq"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="n3N-HP-GIV">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
@@ -1129,7 +1132,7 @@
         <scene sceneID="Tea-KC-vln">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="VbW-q1-PPP" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Accounts" image="person.fill" catalog="system" selectedImage="person.fill" id="7tj-IW-Wox"/>
+                    <tabBarItem key="tabBarItem" title="Accounts" image="account-2" selectedImage="account-2" id="7tj-IW-Wox"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="z2N-lu-jYi">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
@@ -1148,7 +1151,7 @@
         <scene sceneID="BCo-eE-uVq">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="DwO-LK-4Gc" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Home" image="house.fill" catalog="system" selectedImage="house.fill" id="uDb-0l-On5">
+                    <tabBarItem key="tabBarItem" title="Home" image="home-2" selectedImage="home-2" id="uDb-0l-On5">
                         <color key="badgeColor" cocoaTouchSystemColor="darkTextColor"/>
                     </tabBarItem>
                     <toolbarItems/>
@@ -1217,8 +1220,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="account-2" width="25" height="25"/>
         <image name="answer" width="565" height="561"/>
-        <image name="bookmark.fill" catalog="system" width="56" height="64"/>
         <image name="camera" catalog="system" width="64" height="48"/>
         <image name="checkmark.circle" catalog="system" width="64" height="60"/>
         <image name="doc.plaintext" catalog="system" width="56" height="64"/>
@@ -1226,11 +1229,12 @@
         <image name="folder" catalog="system" width="64" height="46"/>
         <image name="gear" catalog="system" width="64" height="58"/>
         <image name="globe" width="5760" height="3840"/>
+        <image name="group-2" width="25" height="25"/>
         <image name="heart.fill" catalog="system" width="64" height="54"/>
-        <image name="house.fill" catalog="system" width="64" height="52"/>
+        <image name="home-2" width="25" height="25"/>
         <image name="lvl" width="300" height="300"/>
+        <image name="notebook-2" width="25" height="25"/>
         <image name="person.2" catalog="system" width="64" height="40"/>
-        <image name="person.2.square.stack.fill" catalog="system" width="56" height="64"/>
         <image name="person.fill" catalog="system" width="64" height="60"/>
         <image name="plus.circle" catalog="system" width="64" height="60"/>
         <image name="questionmark.circle" catalog="system" width="64" height="60"/>

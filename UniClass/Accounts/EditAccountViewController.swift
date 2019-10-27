@@ -38,6 +38,12 @@ class EditAccountViewController: UIViewController, UINavigationControllerDelegat
     @IBAction func acceptChangeButton(_ sender: Any) {
         var changeMade = false
         
+        if imageEdit.image != UIImage(named: "person.fill") {
+            let newImage = imageEdit.image!.pngData()
+            updateDelegate(data: newImage!, entityName: "UserProfile", attributeName: "image", position: 0)
+            changeMade = true
+        }
+        
         if usernameText.text != "" {
             updateDelegate(data: usernameText.text!, entityName: "UserProfile", attributeName: "username", position: 0)
             changeMade = true
@@ -66,7 +72,6 @@ class EditAccountViewController: UIViewController, UINavigationControllerDelegat
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        imageEdit.image = UserData.image
         
     }
 

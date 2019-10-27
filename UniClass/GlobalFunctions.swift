@@ -101,3 +101,28 @@ func fetchUserData() -> [String: String] {
         return nil!
     }
 }
+
+func fetchUserImage() -> UIImage {
+    
+    let appDelegate = UIApplication.shared.delegate as! AppDelegate
+    let context = appDelegate.persistentContainer.viewContext
+    let request = NSFetchRequest<NSFetchRequestResult>(entityName: "UserProfile")
+    
+    request.returnsObjectsAsFaults = false
+    
+    do {
+        let results = try context.fetch(request)
+        
+        if results.count == 0 {
+            return UIImage(named: "person.fill")!
+        } else {
+            
+            let image = (results[results.count-1] as AnyObject).value(forKey: "image") as! NSData
+            return UIImage(data: image as Data)!
+        }
+        
+    } catch {
+        print("ERROR FETCHING IMAGE")
+        return nil!
+    }
+}
