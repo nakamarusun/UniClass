@@ -24,6 +24,7 @@
 		0134DBDD23649FF200C0C3C8 /* GlobalFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0134DBDC23649FF200C0C3C8 /* GlobalFunctions.swift */; };
 		0134DBDF2365A48300C0C3C8 /* ContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0134DBDE2365A48300C0C3C8 /* ContentViewController.swift */; };
 		0134DBE22365CEA200C0C3C8 /* ContentViewCellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0134DBE12365CEA200C0C3C8 /* ContentViewCellController.swift */; };
+		0134DBE42365EDD800C0C3C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0134DBE32365EDD800C0C3C8 /* Assets.xcassets */; };
 		0172E840235F69220090E8E4 /* NotebookSpecificTopics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0172E83F235F69220090E8E4 /* NotebookSpecificTopics.swift */; };
 		01C5EF672360276200F8BA4E /* NotebookTableSubClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01C5EF662360276200F8BA4E /* NotebookTableSubClass.swift */; };
 		01C5EF6B23602E9A00F8BA4E /* NotebookTableCellSubClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01C5EF6A23602E9A00F8BA4E /* NotebookTableCellSubClass.swift */; };
@@ -57,6 +58,7 @@
 		0134DBDC23649FF200C0C3C8 /* GlobalFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalFunctions.swift; sourceTree = "<group>"; };
 		0134DBDE2365A48300C0C3C8 /* ContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewController.swift; sourceTree = "<group>"; };
 		0134DBE12365CEA200C0C3C8 /* ContentViewCellController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewCellController.swift; sourceTree = "<group>"; };
+		0134DBE32365EDD800C0C3C8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../Desktop/Assets.xcassets; sourceTree = "<group>"; };
 		0172E83F235F69220090E8E4 /* NotebookSpecificTopics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotebookSpecificTopics.swift; sourceTree = "<group>"; };
 		01C5EF662360276200F8BA4E /* NotebookTableSubClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotebookTableSubClass.swift; sourceTree = "<group>"; };
 		01C5EF6A23602E9A00F8BA4E /* NotebookTableCellSubClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotebookTableCellSubClass.swift; sourceTree = "<group>"; };
@@ -105,6 +107,7 @@
 		01134A39235A0BCC00C04530 = {
 			isa = PBXGroup;
 			children = (
+				0134DBE32365EDD800C0C3C8 /* Assets.xcassets */,
 				01134A44235A0BCC00C04530 /* UniClass */,
 				01134A43235A0BCC00C04530 /* Products */,
 				E51F916089C2F76171F8CBD5 /* Pods */,
@@ -279,6 +282,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				01134A52235A0BCD00C04530 /* LaunchScreen.storyboard in Resources */,
+				0134DBE42365EDD800C0C3C8 /* Assets.xcassets in Resources */,
 				01134A4D235A0BCC00C04530 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
