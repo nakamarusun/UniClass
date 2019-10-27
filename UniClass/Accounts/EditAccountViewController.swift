@@ -38,21 +38,16 @@ class EditAccountViewController: UIViewController, UINavigationControllerDelegat
     @IBAction func acceptChangeButton(_ sender: Any) {
         var changeMade = false
         
-        let appDelegate = UIApplication.shared.delegate as! AppDelegate
-        let context = appDelegate.persistentContainer.viewContext
-        let object =  NSEntityDescription.insertNewObject(forEntityName: "UserProfile", into: context)
-        
-        
         if usernameText.text != "" {
-            object.setValue(usernameText.text!, forKey: "username")
+            updateDelegate(data: usernameText.text!, entityName: "UserProfile", attributeName: "username", position: 0)
             changeMade = true
         }
         if emailText.text != "" {
-            object.setValue(emailText.text!, forKey: "email")
+            updateDelegate(data: emailText.text!, entityName: "UserProfile", attributeName: "email", position: 0)
             changeMade = true
         }
         if bioText.text != "" {
-            object.setValue(bioText.text!, forKey: "bio")
+            updateDelegate(data: bioText.text!, entityName: "UserProfile", attributeName: "bio", position: 0)
             changeMade = true
         }
         

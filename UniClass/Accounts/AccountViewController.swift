@@ -48,8 +48,7 @@ class AccountViewController: UIViewController {
         favGroupBio.text = userprofile["fgp"]
         favSubjectBio.text = userprofile["fsj"]
         
-        
-        print("display username: \(userprofile["usr"])")
+        print("display username: \(String(describing: userprofile["usr"]))")
     }
 
 }

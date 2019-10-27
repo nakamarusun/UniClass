@@ -40,8 +40,9 @@ func updateDelegate(data: Any, entityName: String, attributeName: String, positi
             (results[position] as AnyObject).setValue(data, forKey: attributeName)
             do {
                 try context.save()
+                print("[DEBUG MESSAGE] Successfully saved \(data) in \(attributeName) of \(entityName) in position \(position)")
             } catch {
-                print("joom")
+                print("[DEBUG MESSAGE] -- FAILED TO SAVE \(data) in \(attributeName) of \(entityName) in position \(position)")
             }
         }
     } catch {
@@ -62,13 +63,13 @@ func fetchUserData() -> [String: String] {
     do {
         let results = try context.fetch(request)
     
-        let username = (results[results.count] as AnyObject).value(forKey: "username") as? String
-        let email = (results[results.count] as AnyObject).value(forKey: "email") as? String
-        let bio = (results[results.count] as AnyObject).value(forKey: "bio") as? String
-        let favSubject = (results[results.count] as AnyObject).value(forKey: "favsubject") as? String
-        let favGroup = (results[results.count] as AnyObject).value(forKey: "favGroup") as? String
-        let academicBio = (results[results.count] as AnyObject).value(forKey: "academicBio") as? String
-        let classBio = (results[results.count] as AnyObject).value(forKey: "classBio") as? String
+        let username = (results[results.count-1] as AnyObject).value(forKey: "username") as? String
+        let email = (results[results.count-1] as AnyObject).value(forKey: "email") as? String
+        let bio = (results[results.count-1] as AnyObject).value(forKey: "bio") as? String
+        let favSubject = (results[results.count-1] as AnyObject).value(forKey: "favSubject") as? String
+        let favGroup = (results[results.count-1] as AnyObject).value(forKey: "favGroup") as? String
+        let academicBio = (results[results.count-1] as AnyObject).value(forKey: "academicBio") as? String
+        let classBio = (results[results.count-1] as AnyObject).value(forKey: "classBio") as? String
         
         let data = ["usr": username!, "eml": email!, "bio": bio!, "fsj": favSubject!, "fgp": favGroup!, "acb": academicBio!, "ccb": classBio!]
         

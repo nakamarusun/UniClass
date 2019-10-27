@@ -61,27 +61,6 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
 
         
         whatshotImageArray.append(whatshotClass(cellImage: UIImage(named: "seemorearticles")!, cellData: ""))
-        
-        
-        let appDelegate = UIApplication.shared.delegate as! AppDelegate
-        let context = appDelegate.persistentContainer.viewContext
-        let object =  NSEntityDescription.insertNewObject(forEntityName: "ProfileData", into: context)
-        
-        object.setValue("User1723861", forKey: "username")
-        object.setValue("user@uniclass.com", forKey: "email")
-        object.setValue(UserData.bio, forKey: "bio")
-        object.setValue("High School", forKey: "academicBio")
-        object.setValue("12th Grade", forKey: "classBio")
-        object.setValue("Calculus", forKey: "favSubject")
-        object.setValue("Calculus - Make it easy !", forKey: "favGroup")
-        object.setValue(UserData.image, forKey: "image")
-        
-        do {
-            try context.save()
-            print("[DEBUG MESSAGE] Saved")
-        } catch {
-            print("[DEBUG MESSAGE] FAILED TO SAVE")
-        }
-        
+        print(fetchUserData())
     }
 }
