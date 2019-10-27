@@ -26,6 +26,7 @@
 		0134DBE22365CEA200C0C3C8 /* ContentViewCellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0134DBE12365CEA200C0C3C8 /* ContentViewCellController.swift */; };
 		0134DBE42365EDD800C0C3C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0134DBE32365EDD800C0C3C8 /* Assets.xcassets */; };
 		0172E840235F69220090E8E4 /* NotebookSpecificTopics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0172E83F235F69220090E8E4 /* NotebookSpecificTopics.swift */; };
+		0199F03F23660B0A007547A3 /* ArticleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0199F03E23660B0A007547A3 /* ArticleViewController.swift */; };
 		01C5EF672360276200F8BA4E /* NotebookTableSubClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01C5EF662360276200F8BA4E /* NotebookTableSubClass.swift */; };
 		01C5EF6B23602E9A00F8BA4E /* NotebookTableCellSubClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01C5EF6A23602E9A00F8BA4E /* NotebookTableCellSubClass.swift */; };
 		01E56B04235E0B4C00CF377E /* TableViewSuperClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E56B03235E0B4C00CF377E /* TableViewSuperClass.swift */; };
@@ -60,6 +61,7 @@
 		0134DBE12365CEA200C0C3C8 /* ContentViewCellController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewCellController.swift; sourceTree = "<group>"; };
 		0134DBE32365EDD800C0C3C8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../Desktop/Assets.xcassets; sourceTree = "<group>"; };
 		0172E83F235F69220090E8E4 /* NotebookSpecificTopics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotebookSpecificTopics.swift; sourceTree = "<group>"; };
+		0199F03E23660B0A007547A3 /* ArticleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleViewController.swift; sourceTree = "<group>"; };
 		01C5EF662360276200F8BA4E /* NotebookTableSubClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotebookTableSubClass.swift; sourceTree = "<group>"; };
 		01C5EF6A23602E9A00F8BA4E /* NotebookTableCellSubClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotebookTableCellSubClass.swift; sourceTree = "<group>"; };
 		01E56B03235E0B4C00CF377E /* TableViewSuperClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewSuperClass.swift; sourceTree = "<group>"; };
@@ -165,6 +167,7 @@
 			children = (
 				0134DBDE2365A48300C0C3C8 /* ContentViewController.swift */,
 				0134DBE12365CEA200C0C3C8 /* ContentViewCellController.swift */,
+				0199F03E23660B0A007547A3 /* ArticleViewController.swift */,
 			);
 			path = Content;
 			sourceTree = "<group>";
@@ -359,6 +362,7 @@
 				0134DBE22365CEA200C0C3C8 /* ContentViewCellController.swift in Sources */,
 				0109B36023620BA20043066F /* ModalController.swift in Sources */,
 				9A6F8D13235EF0E4005FA839 /* GroupViewCell.swift in Sources */,
+				0199F03F23660B0A007547A3 /* ArticleViewController.swift in Sources */,
 				01E56B04235E0B4C00CF377E /* TableViewSuperClass.swift in Sources */,
 				01134A48235A0BCC00C04530 /* SceneDelegate.swift in Sources */,
 			);

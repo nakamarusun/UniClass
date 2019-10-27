@@ -44,6 +44,8 @@ class ContentViewController: NotebookViewTable {
         navigationTitleController.title = selectedCell.cellName
         cellArray.append(StandardCell(cellName: "Algebra is NOT FUN STAY AWAY PLEASE", cellSubtitle: "Johanson", cellImage: UIImage(named: "math1")!, cellRating: 4.2))
         cellArray.append(StandardCell(cellName: "GO AWAY WHILE YOU ST", cellSubtitle: "Death", cellImage: UIImage(named: "math2")!, cellRating: 2.4))
+        cellArray.append(StandardCell(cellName: "Algebra is NOT FUN STAY AWAY PLEASE", cellSubtitle: "Johanson", cellImage: UIImage(named: "math1")!, cellRating: 4.2))
+        cellArray.append(StandardCell(cellName: "GO AWAY WHILE YOU ST", cellSubtitle: "Death", cellImage: UIImage(named: "math2")!, cellRating: 2.4))
         
     }
     
