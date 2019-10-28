@@ -1,4 +1,2 @@
 ${PODS_ROOT}/Target Support Files/Pods-UniClass/Pods-UniClass-frameworks.sh
 ${BUILT_PRODUCTS_DIR}/Cosmos/Cosmos.framework
-${BUILT_PRODUCTS_DIR}/Realm/Realm.framework
-${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework

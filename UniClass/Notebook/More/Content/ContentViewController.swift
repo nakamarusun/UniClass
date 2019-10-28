@@ -26,6 +26,7 @@ class ContentViewController: NotebookViewTable {
         cell.cellAuthor.text = "By " + menu.cellSubtitle
         cell.cellImage.image = menu.cellImage
         cell.cellStars.rating = menu.cellRating
+        cell.cellStars.text = "(\(menu.cellRatingCount))"
         cell.cellTitle.sizeToFit()
         cell.cellStars.settings.fillMode = .precise
         
@@ -44,6 +45,24 @@ class ContentViewController: NotebookViewTable {
         self.contentViewTableView.delegate = self
         navigationTitleController.title = selectedCell.cellName
         
+        let content = getSubtopic(named: selectedCell.cellName)
+        
+        for contents in content {
+            cellArray.append(StandardCell(cellName: contents.title!, cellSubtitle: contents.author!, cellImage: UIImage(data: contents.thumbnail!)!, cellRating: Double(contents.rating), cellRatingCount: Int(contents.ratingCount)))
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.performSegue(withIdentifier: "goToArticle", sender: nil)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "goToArticle" {
+            
+            let articleView = segue.destination as! ArticleViewController
+            let articleTemp = getSubtopic(named: selectedCell.cellName)
+            articleView.article = articleTemp[contentViewTableView.indexPathForSelectedRow!.row]
+        }
     }
     
     

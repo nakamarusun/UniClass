@@ -34,7 +34,6 @@
 		01E56B04235E0B4C00CF377E /* TableViewSuperClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E56B03235E0B4C00CF377E /* TableViewSuperClass.swift */; };
 		01E56B08235E0FCA00CF377E /* NotebookTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E56B07235E0FCA00CF377E /* NotebookTableViewCell.swift */; };
 		01E56B0D235E11A900CF377E /* StandardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E56B0C235E11A900CF377E /* StandardCell.swift */; };
-		01FE28352366D17600A0B949 /* ArticleRealmClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01FE28342366D17600A0B949 /* ArticleRealmClass.swift */; };
 		9A04ED1B23604A3500E8217C /* GroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A04ED1A23604A3500E8217C /* GroupViewController.swift */; };
 		9A6F8D11235EECC5005FA839 /* cellGroups.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6F8D10235EECC5005FA839 /* cellGroups.swift */; };
 		9A6F8D13235EF0E4005FA839 /* GroupViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6F8D12235EF0E4005FA839 /* GroupViewCell.swift */; };
@@ -72,7 +71,6 @@
 		01E56B03235E0B4C00CF377E /* TableViewSuperClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewSuperClass.swift; sourceTree = "<group>"; };
 		01E56B07235E0FCA00CF377E /* NotebookTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotebookTableViewCell.swift; sourceTree = "<group>"; };
 		01E56B0C235E11A900CF377E /* StandardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardCell.swift; sourceTree = "<group>"; };
-		01FE28342366D17600A0B949 /* ArticleRealmClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleRealmClass.swift; sourceTree = "<group>"; };
 		163057A875B962A4EB7B5FAA /* Pods-UniClass.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UniClass.release.xcconfig"; path = "Target Support Files/Pods-UniClass/Pods-UniClass.release.xcconfig"; sourceTree = "<group>"; };
 		2B6C9EB4C45099903A017C2D /* Pods_UniClass.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UniClass.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8765A47B681CBFF8C5E412D0 /* Pods-UniClass.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UniClass.debug.xcconfig"; path = "Target Support Files/Pods-UniClass/Pods-UniClass.debug.xcconfig"; sourceTree = "<group>"; };
@@ -176,7 +174,6 @@
 				0134DBE12365CEA200C0C3C8 /* ContentViewCellController.swift */,
 				0199F03E23660B0A007547A3 /* ArticleViewController.swift */,
 				0199F04223669428007547A3 /* ArticleClass.swift */,
-				01FE28342366D17600A0B949 /* ArticleRealmClass.swift */,
 			);
 			path = Content;
 			sourceTree = "<group>";
@@ -362,7 +359,6 @@
 				0199F04323669428007547A3 /* ArticleClass.swift in Sources */,
 				01C5EF672360276200F8BA4E /* NotebookTableSubClass.swift in Sources */,
 				0134DBAD2362E31700C0C3C8 /* GlobalVariables.swift in Sources */,
-				01FE28352366D17600A0B949 /* ArticleRealmClass.swift in Sources */,
 				01E56B0D235E11A900CF377E /* StandardCell.swift in Sources */,
 				0134DBAF2364447800C0C3C8 /* EditAccountViewController.swift in Sources */,
 				9A6F8D11235EECC5005FA839 /* cellGroups.swift in Sources */,

@@ -9,24 +9,30 @@
 import UIKit
 
 class ArticleViewController: UIViewController {
-
+    
+    var article: Article?
     
     @IBOutlet weak var navigationBar: UINavigationItem!
+    @IBOutlet weak var imageArticle: UIImageView!
+    @IBOutlet weak var bodyArticle: UITextView!
+    @IBOutlet weak var dateArticle: UILabel!
+    @IBOutlet weak var scrollView: UIScrollView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationBar.title = "yesk"
+        navigationBar.title = article!.title
+        imageArticle.image = UIImage(data: article!.image!)
+        dateArticle.text = "\(article!.date ?? Date())"
+        bodyArticle.text = article!.body
+        let bodySize = bodyArticle.contentSize.height
+        print(bodySize)
+        if bodySize > 310 {
+            print(bodyArticle.frame.size.height)
+            bodyArticle.frame.size.height += bodySize - 310
+            scrollView.contentSize.height = bodySize + 310
+            print("yes")
+        }
         
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

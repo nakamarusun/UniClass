@@ -60,12 +60,14 @@ func fetchUserData() -> [String: String] {
     request.returnsObjectsAsFaults = false
     
     do {
-        let results = try context.fetch(request)
+        let result = try context.fetch(request)
         
-        if results.count == 0 {
+        if result.count == 0 {
             let appDelegate = UIApplication.shared.delegate as! AppDelegate
             let context = appDelegate.persistentContainer.viewContext
             let object =  NSEntityDescription.insertNewObject(forEntityName: "UserProfile", into: context)
+            
+            let defaultImage = UIImage(named: "Nyes")!.pngData()
             
             object.setValue("User1723861", forKey: "username")
             object.setValue("user@uniclass.com", forKey: "email")
@@ -74,7 +76,7 @@ func fetchUserData() -> [String: String] {
             object.setValue("12th Grade", forKey: "classBio")
             object.setValue("Calculus", forKey: "favSubject")
             object.setValue("Calculus - Make it easy !", forKey: "favGroup")
-            object.setValue(UserData.image, forKey: "image")
+            object.setValue(defaultImage!, forKey: "image")
             
             do {
                 try context.save()
@@ -83,6 +85,8 @@ func fetchUserData() -> [String: String] {
                 print("[DEBUG MESSAGE] FAILED TO SAVE")
             }
         }
+        
+        let results = try context.fetch(request)
     
         let username = (results[results.count-1] as AnyObject).value(forKey: "username") as? String
         let email = (results[results.count-1] as AnyObject).value(forKey: "email") as? String
@@ -116,11 +120,10 @@ func fetchUserImage() -> UIImage {
         if results.count == 0 {
             return UIImage(named: "person.fill")!
         } else {
-            
-            let image = (results[results.count-1] as AnyObject).value(forKey: "image") as! NSData
+            let imageData = (results[results.count-1] as AnyObject).value(forKey: "image")
+            let image = imageData as! NSData
             return UIImage(data: image as Data)!
         }
-        
     } catch {
         print("ERROR FETCHING IMAGE")
         return nil!
@@ -137,14 +140,27 @@ func getSubtopic(named: String) -> [Article] {
     
     do {
         let subtopics = try context.fetch(fetch)
-        return subtopics.first!.relationship?.array as! [Article]
+        if let checkNil = subtopics.first?.relationship?.array {
+            return checkNil as! [Article]
+        } else {
+            let placeholder = [Article.init()]
+            placeholder[0].title = "Sample Title"
+            placeholder[0].author = "John Doe"
+            placeholder[0].thumbnail = UIImage(named: "Nyes")!.pngData()
+            placeholder[0].rating = 2.5
+            placeholder[0].ratingCount = 2
+            placeholder[0].date = Date()
+            placeholder[0].image = UIImage(named: "Nyes")!.pngData()
+            placeholder[0].body = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lacus laoreet non curabitur gravida arcu. Laoreet non curabitur gravida arcu ac tortor dignissim convallis. Enim sit amet venenatis urna cursus. Faucibus scelerisque eleifend donec pretium vulputate sapien. Tortor vitae purus faucibus ornare suspendisse sed. Cursus risus at ultrices mi tempus. Molestie ac feugiat sed lectus vestibulum mattis ullamcorper velit. Nisl condimentum id venenatis a condimentum vitae sapien pellentesque habitant. Id semper risus in hendrerit gravida rutrum quisque non. Cras adipiscing enim eu turpis egestas pretium aenean pharetra. Morbi tristique senectus et netus et malesuada fames ac turpis. Facilisis mauris sit amet massa vitae tortor condimentum lacinia. Nam at lectus urna duis. At consectetur lorem donec massa sapien faucibus. Adipiscing enim eu turpis egestas pretium aenean pharetra magna ac. Neque aliquam vestibulum morbi blandit cursus. Lectus arcu bibendum at varius vel pharetra vel turpis. Libero justo laoreet sit amet cursus sit amet. Donec massa sapien faucibus et molestie ac."
+            return placeholder
+        }
     } catch {
         print("ERROR FETCHING SUBTOPIC FROM COREDATA")
         return []
     }
 }
 
-func storeArticle(title: String, thumbnail: UIImage, ratingCount: Int, image: UIImage, date: Date, body: String, author: String, toSubTopic: String) {
+func storeArticle(title: String, thumbnail: UIImage, ratingCount: Int, rating: Float, image: UIImage, date: Date, body: String, author: String, toSubTopic: String) {
     
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
     let context = appDelegate.persistentContainer.viewContext
@@ -153,6 +169,7 @@ func storeArticle(title: String, thumbnail: UIImage, ratingCount: Int, image: UI
     obj.title = title
     obj.thumbnail = thumbnail.pngData()
     obj.ratingCount = Int64(ratingCount)
+    obj.rating = rating
     obj.image = image.pngData()
     obj.date = date
     obj.body = body
@@ -166,9 +183,8 @@ func storeArticle(title: String, thumbnail: UIImage, ratingCount: Int, image: UI
         if subtopics.isEmpty{
             let subtopic = Subtopic(context: context)
             subtopic.name = toSubTopic
-                
             obj.relationship = subtopic
-        }else{
+        } else {
             obj.relationship = subtopics.first
         }
         if context.hasChanges {

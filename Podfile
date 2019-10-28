@@ -7,6 +7,5 @@ target 'UniClass' do
 
   # Pods for UniClass
     pod 'Cosmos'
-    pod 'RealmSwift'
 
 end

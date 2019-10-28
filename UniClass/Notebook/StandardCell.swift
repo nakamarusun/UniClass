@@ -14,12 +14,22 @@ class StandardCell {
     var cellSubtitle: String
     var cellImage: UIImage
     var cellRating: Double
+    var cellRatingCount: Int
     
     init() {
         cellName = "NULL"
         cellSubtitle = "NULL"
         cellImage = UIImage(named: "Nyes")!
         cellRating = 2.5
+        cellRatingCount = 2
+    }
+    
+    init(cellName: String, cellSubtitle: String, cellImage: UIImage, cellRating: Double, cellRatingCount: Int) {
+        self.cellName = cellName
+        self.cellSubtitle = cellSubtitle
+        self.cellImage = cellImage
+        self.cellRating = cellRating
+        self.cellRatingCount = cellRatingCount
     }
     
     init(cellName: String, cellSubtitle: String, cellImage: UIImage, cellRating: Double) {
@@ -27,6 +37,7 @@ class StandardCell {
         self.cellSubtitle = cellSubtitle
         self.cellImage = cellImage
         self.cellRating = cellRating
+        cellRatingCount = 2
     }
     
     init(cellName: String, cellSubtitle: String, cellImage: UIImage) {
@@ -34,6 +45,7 @@ class StandardCell {
         self.cellSubtitle = cellSubtitle
         self.cellImage = cellImage
         self.cellRating = 2.5
+        cellRatingCount = 2
     }
     
     init(cellName: String, cellSubtitle: String) {
@@ -41,6 +53,7 @@ class StandardCell {
         self.cellSubtitle = cellSubtitle
         self.cellImage = UIImage(named: "Nyes")!
         self.cellRating = 2.5
+        cellRatingCount = 2
     }
     
 }

@@ -38,6 +38,7 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     }
     
     @IBOutlet weak var mainScrollView: UIScrollView!
+    @IBOutlet weak var homeTableView: UITableView!
     
     @IBAction func buttonFavorite(_ sender: Any) {
         
@@ -49,7 +50,8 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         
         super.viewDidLoad()
         print("[DEBUG MESSAGE] View loaded.")
-        mainScrollView.contentSize = CGSize(width: 412, height: 1200)
+        mainScrollView.contentSize = CGSize(width: 412, height: 870)
+        homeTableView.contentSize = CGSize(width: 412, height: 300)
         
         self.whatshotCollectionView.dataSource = self
         self.whatshotCollectionView.delegate = self
