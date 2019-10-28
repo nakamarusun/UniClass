@@ -126,3 +126,56 @@ func fetchUserImage() -> UIImage {
         return nil!
     }
 }
+
+func getSubtopic(named: String) -> [Article] {
+    
+    let appDelegate = UIApplication.shared.delegate as! AppDelegate
+    let context = appDelegate.persistentContainer.viewContext
+    
+    let fetch:NSFetchRequest = Subtopic.fetchRequest()
+    fetch.predicate = NSPredicate(format: "name == %@", named)
+    
+    do {
+        let subtopics = try context.fetch(fetch)
+        return subtopics.first!.relationship?.array as! [Article]
+    } catch {
+        print("ERROR FETCHING SUBTOPIC FROM COREDATA")
+        return []
+    }
+}
+
+func storeArticle(title: String, thumbnail: UIImage, ratingCount: Int, image: UIImage, date: Date, body: String, author: String, toSubTopic: String) {
+    
+    let appDelegate = UIApplication.shared.delegate as! AppDelegate
+    let context = appDelegate.persistentContainer.viewContext
+    let obj = Article(context:context)
+    
+    obj.title = title
+    obj.thumbnail = thumbnail.pngData()
+    obj.ratingCount = Int64(ratingCount)
+    obj.image = image.pngData()
+    obj.date = date
+    obj.body = body
+    obj.author = author
+
+    let fetch:NSFetchRequest = Subtopic.fetchRequest()
+    fetch.predicate = NSPredicate(format: "name == %@", toSubTopic)
+    
+    do {
+        let subtopics = try context.fetch(fetch)
+        if subtopics.isEmpty{
+            let subtopic = Subtopic(context: context)
+            subtopic.name = toSubTopic
+                
+            obj.relationship = subtopic
+        }else{
+            obj.relationship = subtopics.first
+        }
+        if context.hasChanges {
+            try context.save()
+        }
+        print("[DEBUG MESSAGE] Saved everything to Article successfully")
+    } catch {
+        print("[DEBUG MESSAGE] FAILED TO SAVE")
+    }
+}

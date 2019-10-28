@@ -44,31 +44,6 @@ class ContentViewController: NotebookViewTable {
         self.contentViewTableView.delegate = self
         navigationTitleController.title = selectedCell.cellName
         
-        let appDelegate = UIApplication.shared.delegate as! AppDelegate
-        let context = appDelegate.persistentContainer.viewContext
-        let request = NSFetchRequest<NSFetchRequestResult>(entityName: "ArticleData")
-        
-        request.returnsObjectsAsFaults = false
-        
-        do {
-            let results = try context.fetch(request)
-            for result in results {
-                if let articleDictionary = (result as AnyObject).value(forKey: "notes") as? [String: [Article]] {
-                    GlobalVariables.article = articleDictionary
-                    print(GlobalVariables.article["aljabar"]!.count)
-                }
-            }
-        } catch {
-            print("ERROR FETCHING ARTICLE DATA")
-        }
-        
-        let jay = GlobalVariables.article["aljabar"]
-        let articleCount = jay!.count
-        
-        for i in 0..<articleCount {
-            let dataInside = jay![i]
-            cellArray.append(StandardCell(cellName: dataInside.articleTitle, cellSubtitle: dataInside.articleAuthor, cellImage: dataInside.articleImage, cellRating: dataInside.articleRating))
-        }
     }
     
     
