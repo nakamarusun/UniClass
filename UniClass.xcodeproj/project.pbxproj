@@ -27,6 +27,8 @@
 		0134DBE42365EDD800C0C3C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0134DBE32365EDD800C0C3C8 /* Assets.xcassets */; };
 		0172E840235F69220090E8E4 /* NotebookSpecificTopics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0172E83F235F69220090E8E4 /* NotebookSpecificTopics.swift */; };
 		0199F03F23660B0A007547A3 /* ArticleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0199F03E23660B0A007547A3 /* ArticleViewController.swift */; };
+		0199F0412366887A007547A3 /* favoriteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0199F0402366887A007547A3 /* favoriteController.swift */; };
+		0199F04323669428007547A3 /* ArticleClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0199F04223669428007547A3 /* ArticleClass.swift */; };
 		01C5EF672360276200F8BA4E /* NotebookTableSubClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01C5EF662360276200F8BA4E /* NotebookTableSubClass.swift */; };
 		01C5EF6B23602E9A00F8BA4E /* NotebookTableCellSubClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01C5EF6A23602E9A00F8BA4E /* NotebookTableCellSubClass.swift */; };
 		01E56B04235E0B4C00CF377E /* TableViewSuperClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E56B03235E0B4C00CF377E /* TableViewSuperClass.swift */; };
@@ -62,6 +64,8 @@
 		0134DBE32365EDD800C0C3C8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../Desktop/Assets.xcassets; sourceTree = "<group>"; };
 		0172E83F235F69220090E8E4 /* NotebookSpecificTopics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotebookSpecificTopics.swift; sourceTree = "<group>"; };
 		0199F03E23660B0A007547A3 /* ArticleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleViewController.swift; sourceTree = "<group>"; };
+		0199F0402366887A007547A3 /* favoriteController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = favoriteController.swift; sourceTree = "<group>"; };
+		0199F04223669428007547A3 /* ArticleClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleClass.swift; sourceTree = "<group>"; };
 		01C5EF662360276200F8BA4E /* NotebookTableSubClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotebookTableSubClass.swift; sourceTree = "<group>"; };
 		01C5EF6A23602E9A00F8BA4E /* NotebookTableCellSubClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotebookTableCellSubClass.swift; sourceTree = "<group>"; };
 		01E56B03235E0B4C00CF377E /* TableViewSuperClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewSuperClass.swift; sourceTree = "<group>"; };
@@ -148,6 +152,7 @@
 				01134A49235A0BCC00C04530 /* ViewController.swift */,
 				012BE90F235F5FB400BFB67D /* whatshotClass.swift */,
 				012BE913235F618400BFB67D /* whatshotCollectionViewCell.swift */,
+				0199F0402366887A007547A3 /* favoriteController.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -168,6 +173,7 @@
 				0134DBDE2365A48300C0C3C8 /* ContentViewController.swift */,
 				0134DBE12365CEA200C0C3C8 /* ContentViewCellController.swift */,
 				0199F03E23660B0A007547A3 /* ArticleViewController.swift */,
+				0199F04223669428007547A3 /* ArticleClass.swift */,
 			);
 			path = Content;
 			sourceTree = "<group>";
@@ -348,7 +354,9 @@
 				0109B36223620F9C0043066F /* ChoiceController.swift in Sources */,
 				9A04ED1B23604A3500E8217C /* GroupViewController.swift in Sources */,
 				01134A46235A0BCC00C04530 /* AppDelegate.swift in Sources */,
+				0199F0412366887A007547A3 /* favoriteController.swift in Sources */,
 				0134DBB323644F2200C0C3C8 /* UserData.swift in Sources */,
+				0199F04323669428007547A3 /* ArticleClass.swift in Sources */,
 				01C5EF672360276200F8BA4E /* NotebookTableSubClass.swift in Sources */,
 				0134DBAD2362E31700C0C3C8 /* GlobalVariables.swift in Sources */,
 				01E56B0D235E11A900CF377E /* StandardCell.swift in Sources */,

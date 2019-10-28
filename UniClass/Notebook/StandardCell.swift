@@ -13,7 +13,7 @@ class StandardCell {
     var cellName: String
     var cellSubtitle: String
     var cellImage: UIImage
-    var cellRating: Float
+    var cellRating: Double
     
     init() {
         cellName = "NULL"
@@ -22,7 +22,7 @@ class StandardCell {
         cellRating = 2.5
     }
     
-    init(cellName: String, cellSubtitle: String, cellImage: UIImage, cellRating: Float) {
+    init(cellName: String, cellSubtitle: String, cellImage: UIImage, cellRating: Double) {
         self.cellName = cellName
         self.cellSubtitle = cellSubtitle
         self.cellImage = cellImage

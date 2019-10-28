@@ -48,6 +48,8 @@ class AccountViewController: UIViewController {
         favGroupBio.text = userprofile["fgp"]
         favSubjectBio.text = userprofile["fsj"]
         
+        bioBio.sizeToFit()
+        
         profileImage.image = fetchUserImage()
         
         print("display username: \(String(describing: userprofile["usr"]))")

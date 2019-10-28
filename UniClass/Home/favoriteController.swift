@@ -1,5 +1,5 @@
 //
-//  ArticleViewController.swift
+//  favoriteController.swift
 //  UniClass
 //
 //  Created by Jason Christian Hailianto on 28/10/19.
@@ -8,14 +8,11 @@
 
 import UIKit
 
-class ArticleViewController: UIViewController {
+class favoriteController: UIViewController {
 
-    
-    @IBOutlet weak var navigationBar: UINavigationItem!
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationBar.title = "yesk"
-        
+
     }
     
 

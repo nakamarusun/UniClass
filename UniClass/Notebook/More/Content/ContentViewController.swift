@@ -8,6 +8,7 @@
 
 import UIKit
 import Cosmos
+import CoreData
 
 class ContentViewController: NotebookViewTable {
     
@@ -24,7 +25,7 @@ class ContentViewController: NotebookViewTable {
         cell.cellTitle.text = menu.cellName
         cell.cellAuthor.text = "By " + menu.cellSubtitle
         cell.cellImage.image = menu.cellImage
-        cell.cellStars.rating = Double(menu.cellRating)
+        cell.cellStars.rating = menu.cellRating
         cell.cellTitle.sizeToFit()
         cell.cellStars.settings.fillMode = .precise
         
@@ -42,14 +43,35 @@ class ContentViewController: NotebookViewTable {
         self.contentViewTableView.dataSource = self
         self.contentViewTableView.delegate = self
         navigationTitleController.title = selectedCell.cellName
-        cellArray.append(StandardCell(cellName: "Algebra is NOT FUN STAY AWAY PLEASE", cellSubtitle: "Johanson", cellImage: UIImage(named: "math1")!, cellRating: 4.2))
-        cellArray.append(StandardCell(cellName: "GO AWAY WHILE YOU ST", cellSubtitle: "Death", cellImage: UIImage(named: "math2")!, cellRating: 2.4))
-        cellArray.append(StandardCell(cellName: "Algebra is NOT FUN STAY AWAY PLEASE", cellSubtitle: "Johanson", cellImage: UIImage(named: "math1")!, cellRating: 4.2))
-        cellArray.append(StandardCell(cellName: "GO AWAY WHILE YOU ST", cellSubtitle: "Death", cellImage: UIImage(named: "math2")!, cellRating: 2.4))
         
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        let context = appDelegate.persistentContainer.viewContext
+        let request = NSFetchRequest<NSFetchRequestResult>(entityName: "ArticleData")
+        
+        request.returnsObjectsAsFaults = false
+        
+        do {
+            let results = try context.fetch(request)
+            for result in results {
+                if let articleDictionary = (result as AnyObject).value(forKey: "notes") as? [String: [Article]] {
+                    GlobalVariables.article = articleDictionary
+                    print(GlobalVariables.article["aljabar"]!.count)
+                }
+            }
+        } catch {
+            print("ERROR FETCHING ARTICLE DATA")
+        }
+        
+        let jay = GlobalVariables.article["aljabar"]
+        let articleCount = jay!.count
+        
+        for i in 0..<articleCount {
+            let dataInside = jay![i]
+            cellArray.append(StandardCell(cellName: dataInside.articleTitle, cellSubtitle: dataInside.articleAuthor, cellImage: dataInside.articleImage, cellRating: dataInside.articleRating))
+        }
     }
     
-
+    
     /*
     // MARK: - Navigation
 
