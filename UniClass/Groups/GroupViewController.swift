@@ -43,10 +43,16 @@ class GroupViewController: UIViewController, UITableViewDataSource, UITableViewD
        
         super.viewDidLoad()
         
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
         self.TableViewGroup.dataSource = self
         self.TableViewGroup.delegate = self
-
-        groupArray.append(cellGroupMessage())
+        
+        if GlobalVariables.groupCreated && groupArray.count == 0 {
+            groupArray.append(cellGroupMessage(cellImage: UIImage(named: "math5")!, cellTitle: "Algebra United", cellMessage: "We can do it !", cellMessenger: "", cellTime: "00:00"))
+        }
+        TableViewGroup.reloadData()
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

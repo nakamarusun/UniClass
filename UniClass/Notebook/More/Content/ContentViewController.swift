@@ -44,11 +44,20 @@ class ContentViewController: NotebookViewTable {
         self.contentViewTableView.dataSource = self
         self.contentViewTableView.delegate = self
         navigationTitleController.title = selectedCell.cellName
+        navigationTitleController.backBarButtonItem?.title = "Subtopics"
         
-        let content = getSubtopic(named: selectedCell.cellName)
+        switch GlobalVariables.choices {
         
-        for contents in content {
-            cellArray.append(StandardCell(cellName: contents.title!, cellSubtitle: contents.author!, cellImage: UIImage(data: contents.thumbnail!)!, cellRating: Double(contents.rating), cellRatingCount: Int(contents.ratingCount)))
+        case "studies":
+            let content = getSubtopic(named: selectedCell.cellName)
+            
+            for contents in content {
+                cellArray.append(StandardCell(cellName: contents.title!, cellSubtitle: contents.author!, cellImage: UIImage(data: contents.thumbnail!)!, cellRating: Double(contents.rating), cellRatingCount: Int(contents.ratingCount)))
+            }
+        case "quizzes":
+            cellArray.append(StandardCell(cellName: "Tes super aljabar", cellSubtitle: "Johnny Jungle", cellImage: UIImage(named: "math5")!, cellRating: 4.7, cellRatingCount: 42))
+        default:
+            cellArray.append(StandardCell())
         }
     }
     
@@ -64,7 +73,6 @@ class ContentViewController: NotebookViewTable {
             articleView.article = articleTemp[contentViewTableView.indexPathForSelectedRow!.row]
         }
     }
-    
     
     /*
     // MARK: - Navigation

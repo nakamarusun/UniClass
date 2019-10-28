@@ -143,16 +143,8 @@ func getSubtopic(named: String) -> [Article] {
         if let checkNil = subtopics.first?.relationship?.array {
             return checkNil as! [Article]
         } else {
-            let placeholder = [Article.init()]
-            placeholder[0].title = "Sample Title"
-            placeholder[0].author = "John Doe"
-            placeholder[0].thumbnail = UIImage(named: "Nyes")!.pngData()
-            placeholder[0].rating = 2.5
-            placeholder[0].ratingCount = 2
-            placeholder[0].date = Date()
-            placeholder[0].image = UIImage(named: "Nyes")!.pngData()
-            placeholder[0].body = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lacus laoreet non curabitur gravida arcu. Laoreet non curabitur gravida arcu ac tortor dignissim convallis. Enim sit amet venenatis urna cursus. Faucibus scelerisque eleifend donec pretium vulputate sapien. Tortor vitae purus faucibus ornare suspendisse sed. Cursus risus at ultrices mi tempus. Molestie ac feugiat sed lectus vestibulum mattis ullamcorper velit. Nisl condimentum id venenatis a condimentum vitae sapien pellentesque habitant. Id semper risus in hendrerit gravida rutrum quisque non. Cras adipiscing enim eu turpis egestas pretium aenean pharetra. Morbi tristique senectus et netus et malesuada fames ac turpis. Facilisis mauris sit amet massa vitae tortor condimentum lacinia. Nam at lectus urna duis. At consectetur lorem donec massa sapien faucibus. Adipiscing enim eu turpis egestas pretium aenean pharetra magna ac. Neque aliquam vestibulum morbi blandit cursus. Lectus arcu bibendum at varius vel pharetra vel turpis. Libero justo laoreet sit amet cursus sit amet. Donec massa sapien faucibus et molestie ac."
-            return placeholder
+            storeArticle(title: "Sample Title", thumbnail: UIImage(named: "Nyes")!, ratingCount: 2, rating: 2.5, image: UIImage(named: "placeholder")!, date: Date(), body: "Lorem Ipsum", author: "John Doe", toSubTopic: named)
+            return getSubtopic(named: named)
         }
     } catch {
         print("ERROR FETCHING SUBTOPIC FROM COREDATA")
@@ -195,3 +187,4 @@ func storeArticle(title: String, thumbnail: UIImage, ratingCount: Int, rating: F
         print("[DEBUG MESSAGE] FAILED TO SAVE")
     }
 }
+

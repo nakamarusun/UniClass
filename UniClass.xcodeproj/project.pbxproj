@@ -15,8 +15,11 @@
 		01134A4A235A0BCC00C04530 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01134A49235A0BCC00C04530 /* ViewController.swift */; };
 		01134A4D235A0BCC00C04530 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01134A4B235A0BCC00C04530 /* Main.storyboard */; };
 		01134A52235A0BCD00C04530 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01134A50235A0BCD00C04530 /* LaunchScreen.storyboard */; };
+		011D7B842367444000084FE5 /* favoriteViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011D7B832367444000084FE5 /* favoriteViewCell.swift */; };
+		011D7B882367515300084FE5 /* historyViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011D7B872367515300084FE5 /* historyViewCell.swift */; };
 		012BE910235F5FB400BFB67D /* whatshotClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012BE90F235F5FB400BFB67D /* whatshotClass.swift */; };
 		012BE914235F618400BFB67D /* whatshotCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012BE913235F618400BFB67D /* whatshotCollectionViewCell.swift */; };
+		0130CF7D236762F00065A71E /* addArticleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0130CF7C236762F00065A71E /* addArticleController.swift */; };
 		0134DBAD2362E31700C0C3C8 /* GlobalVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0134DBAC2362E31700C0C3C8 /* GlobalVariables.swift */; };
 		0134DBAF2364447800C0C3C8 /* EditAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0134DBAE2364447800C0C3C8 /* EditAccountViewController.swift */; };
 		0134DBB323644F2200C0C3C8 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0134DBB223644F2200C0C3C8 /* UserData.swift */; };
@@ -29,6 +32,9 @@
 		0199F03F23660B0A007547A3 /* ArticleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0199F03E23660B0A007547A3 /* ArticleViewController.swift */; };
 		0199F0412366887A007547A3 /* favoriteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0199F0402366887A007547A3 /* favoriteController.swift */; };
 		0199F04323669428007547A3 /* ArticleClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0199F04223669428007547A3 /* ArticleClass.swift */; };
+		019A77D723677EC9001A2AB1 /* whatsHotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019A77D623677EC9001A2AB1 /* whatsHotViewController.swift */; };
+		019A77DA236787AF001A2AB1 /* addGroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019A77D9236787AF001A2AB1 /* addGroupViewController.swift */; };
+		019A77DC23678877001A2AB1 /* addGroupViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019A77DB23678877001A2AB1 /* addGroupViewCell.swift */; };
 		01C5EF672360276200F8BA4E /* NotebookTableSubClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01C5EF662360276200F8BA4E /* NotebookTableSubClass.swift */; };
 		01C5EF6B23602E9A00F8BA4E /* NotebookTableCellSubClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01C5EF6A23602E9A00F8BA4E /* NotebookTableCellSubClass.swift */; };
 		01E56B04235E0B4C00CF377E /* TableViewSuperClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E56B03235E0B4C00CF377E /* TableViewSuperClass.swift */; };
@@ -52,8 +58,11 @@
 		01134A4C235A0BCC00C04530 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		01134A51235A0BCD00C04530 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		01134A53235A0BCD00C04530 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		011D7B832367444000084FE5 /* favoriteViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = favoriteViewCell.swift; sourceTree = "<group>"; };
+		011D7B872367515300084FE5 /* historyViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = historyViewCell.swift; sourceTree = "<group>"; };
 		012BE90F235F5FB400BFB67D /* whatshotClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = whatshotClass.swift; sourceTree = "<group>"; };
 		012BE913235F618400BFB67D /* whatshotCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = whatshotCollectionViewCell.swift; sourceTree = "<group>"; };
+		0130CF7C236762F00065A71E /* addArticleController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addArticleController.swift; sourceTree = "<group>"; };
 		0134DBAC2362E31700C0C3C8 /* GlobalVariables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalVariables.swift; sourceTree = "<group>"; };
 		0134DBAE2364447800C0C3C8 /* EditAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditAccountViewController.swift; sourceTree = "<group>"; };
 		0134DBB223644F2200C0C3C8 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
@@ -66,6 +75,9 @@
 		0199F03E23660B0A007547A3 /* ArticleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleViewController.swift; sourceTree = "<group>"; };
 		0199F0402366887A007547A3 /* favoriteController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = favoriteController.swift; sourceTree = "<group>"; };
 		0199F04223669428007547A3 /* ArticleClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleClass.swift; sourceTree = "<group>"; };
+		019A77D623677EC9001A2AB1 /* whatsHotViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = whatsHotViewController.swift; sourceTree = "<group>"; };
+		019A77D9236787AF001A2AB1 /* addGroupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addGroupViewController.swift; sourceTree = "<group>"; };
+		019A77DB23678877001A2AB1 /* addGroupViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addGroupViewCell.swift; sourceTree = "<group>"; };
 		01C5EF662360276200F8BA4E /* NotebookTableSubClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotebookTableSubClass.swift; sourceTree = "<group>"; };
 		01C5EF6A23602E9A00F8BA4E /* NotebookTableCellSubClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotebookTableCellSubClass.swift; sourceTree = "<group>"; };
 		01E56B03235E0B4C00CF377E /* TableViewSuperClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewSuperClass.swift; sourceTree = "<group>"; };
@@ -146,13 +158,32 @@
 			path = UniClass;
 			sourceTree = "<group>";
 		};
+		011D7B852367513000084FE5 /* Favorites */ = {
+			isa = PBXGroup;
+			children = (
+				0199F0402366887A007547A3 /* favoriteController.swift */,
+				011D7B832367444000084FE5 /* favoriteViewCell.swift */,
+			);
+			path = Favorites;
+			sourceTree = "<group>";
+		};
+		011D7B862367513F00084FE5 /* History */ = {
+			isa = PBXGroup;
+			children = (
+				011D7B872367515300084FE5 /* historyViewCell.swift */,
+			);
+			path = History;
+			sourceTree = "<group>";
+		};
 		012BE90E235F5F8D00BFB67D /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				011D7B862367513F00084FE5 /* History */,
+				011D7B852367513000084FE5 /* Favorites */,
 				01134A49235A0BCC00C04530 /* ViewController.swift */,
 				012BE90F235F5FB400BFB67D /* whatshotClass.swift */,
 				012BE913235F618400BFB67D /* whatshotCollectionViewCell.swift */,
-				0199F0402366887A007547A3 /* favoriteController.swift */,
+				019A77D623677EC9001A2AB1 /* whatsHotViewController.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -174,6 +205,7 @@
 				0134DBE12365CEA200C0C3C8 /* ContentViewCellController.swift */,
 				0199F03E23660B0A007547A3 /* ArticleViewController.swift */,
 				0199F04223669428007547A3 /* ArticleClass.swift */,
+				0130CF7C236762F00065A71E /* addArticleController.swift */,
 			);
 			path = Content;
 			sourceTree = "<group>";
@@ -186,6 +218,15 @@
 				0109B36123620F9C0043066F /* ChoiceController.swift */,
 			);
 			path = More;
+			sourceTree = "<group>";
+		};
+		019A77D823678672001A2AB1 /* Add group */ = {
+			isa = PBXGroup;
+			children = (
+				019A77D9236787AF001A2AB1 /* addGroupViewController.swift */,
+				019A77DB23678877001A2AB1 /* addGroupViewCell.swift */,
+			);
+			path = "Add group";
 			sourceTree = "<group>";
 		};
 		01E56B09235E10CF00CF377E /* Notebook */ = {
@@ -212,6 +253,7 @@
 		9A6F8D0D235EEBC4005FA839 /* Groups */ = {
 			isa = PBXGroup;
 			children = (
+				019A77D823678672001A2AB1 /* Add group */,
 				0109B35E23620B8B0043066F /* Modal class */,
 				9A04ED1A23604A3500E8217C /* GroupViewController.swift */,
 				9A6F8D12235EF0E4005FA839 /* GroupViewCell.swift */,
@@ -353,15 +395,20 @@
 				01134A4A235A0BCC00C04530 /* ViewController.swift in Sources */,
 				0109B36223620F9C0043066F /* ChoiceController.swift in Sources */,
 				9A04ED1B23604A3500E8217C /* GroupViewController.swift in Sources */,
+				019A77D723677EC9001A2AB1 /* whatsHotViewController.swift in Sources */,
 				01134A46235A0BCC00C04530 /* AppDelegate.swift in Sources */,
 				0199F0412366887A007547A3 /* favoriteController.swift in Sources */,
 				0134DBB323644F2200C0C3C8 /* UserData.swift in Sources */,
 				0199F04323669428007547A3 /* ArticleClass.swift in Sources */,
 				01C5EF672360276200F8BA4E /* NotebookTableSubClass.swift in Sources */,
+				011D7B842367444000084FE5 /* favoriteViewCell.swift in Sources */,
 				0134DBAD2362E31700C0C3C8 /* GlobalVariables.swift in Sources */,
+				019A77DA236787AF001A2AB1 /* addGroupViewController.swift in Sources */,
 				01E56B0D235E11A900CF377E /* StandardCell.swift in Sources */,
 				0134DBAF2364447800C0C3C8 /* EditAccountViewController.swift in Sources */,
+				011D7B882367515300084FE5 /* historyViewCell.swift in Sources */,
 				9A6F8D11235EECC5005FA839 /* cellGroups.swift in Sources */,
+				0130CF7D236762F00065A71E /* addArticleController.swift in Sources */,
 				0134DBDD23649FF200C0C3C8 /* GlobalFunctions.swift in Sources */,
 				0134DBDF2365A48300C0C3C8 /* ContentViewController.swift in Sources */,
 				0134DBD923646DBE00C0C3C8 /* UniClass.xcdatamodeld in Sources */,
@@ -370,6 +417,7 @@
 				0134DBE22365CEA200C0C3C8 /* ContentViewCellController.swift in Sources */,
 				0109B36023620BA20043066F /* ModalController.swift in Sources */,
 				9A6F8D13235EF0E4005FA839 /* GroupViewCell.swift in Sources */,
+				019A77DC23678877001A2AB1 /* addGroupViewCell.swift in Sources */,
 				0199F03F23660B0A007547A3 /* ArticleViewController.swift in Sources */,
 				01E56B04235E0B4C00CF377E /* TableViewSuperClass.swift in Sources */,
 				01134A48235A0BCC00C04530 /* SceneDelegate.swift in Sources */,

@@ -49,7 +49,13 @@ class NotebookTableSubClass: NotebookViewTable {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        self.performSegue(withIdentifier: "goToSpecific", sender: nil)
+        
+        switch GlobalVariables.choices {
+        case "groups":
+            self.performSegue(withIdentifier: "goToGroupSelection", sender: nil)
+        default:
+            self.performSegue(withIdentifier: "goToSpecific", sender: nil)
+        }
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

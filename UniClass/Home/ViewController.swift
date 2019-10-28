@@ -8,10 +8,84 @@
 
 import UIKit
 import CoreData
-import RealmSwift
 
-class ViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
+class ViewController: NotebookViewTable, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout{
+    
+    @IBOutlet weak var labelHistory: UILabel!
+    @IBOutlet weak var homeTableView: UITableView!
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "menuCell", for: indexPath) as! historyViewCell
+        let menu = cellArray[indexPath.row]
+        
+        cell.cellTitle.text = menu.cellName
+        cell.cellAuthor.text = "By " + menu.cellSubtitle
+        cell.cellImage.image = menu.cellImage
+        cell.cellStars.rating = menu.cellRating
+        cell.cellStars.text = "(\(menu.cellRatingCount))"
+        cell.cellTitle.sizeToFit()
+        cell.cellStars.settings.fillMode = .precise
+        
+        return cell
+        
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 142
+    }
+    
+    @IBAction func whatshotButton(_ sender: Any) {
+        performSegue(withIdentifier: "goToWhatshotArticle", sender: nil)
+    }
+    override func viewDidLoad() {
+        
+        super.viewDidLoad()
+        print("[DEBUG MESSAGE] View loaded.")
+        mainScrollView.contentSize = CGSize(width: 412, height: 870)
+        homeTableView.contentSize = CGSize(width: 412, height: 300)
+        
+        self.whatshotCollectionView.dataSource = self
+        self.whatshotCollectionView.delegate = self
+        
+        
+        whatshotImageArray = []
+        whatshotImageArray.append(whatshotClass(cellImage: UIImage(named: "biologi2")!, cellData: ""))
+        whatshotImageArray.append(whatshotClass(cellImage: UIImage(named: "biologi3")!, cellData: ""))
+        
 
+        
+        whatshotImageArray.append(whatshotClass(cellImage: UIImage(named: "seemorearticles")!, cellData: ""))
+        print(fetchUserData())
+        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        self.homeTableView.dataSource = self
+        self.homeTableView.delegate = self
+        cellArray = []
+        
+        for histories in GlobalVariables.historyArticle {
+            cellArray.append(StandardCell(cellName: histories.title!, cellSubtitle: histories.author!, cellImage: UIImage(data: histories.thumbnail!)!, cellRating: Double(histories.rating), cellRatingCount: Int(histories.ratingCount)))
+        }
+        homeTableView.reloadData()
+        if cellArray.count != 0 {
+            labelHistory.text = ""
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.performSegue(withIdentifier: "goToArticleHot", sender: nil)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "goToArticleHot" {
+            
+            let articleView = segue.destination as! ArticleViewController
+            articleView.article = GlobalVariables.historyArticle[homeTableView.indexPathForSelectedRow!.row]
+        }
+    }
+    
     @IBOutlet weak var whatshotCollectionView: UICollectionView!
     var whatshotImageArray:[whatshotClass]!
     
@@ -38,7 +112,6 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     }
     
     @IBOutlet weak var mainScrollView: UIScrollView!
-    @IBOutlet weak var homeTableView: UITableView!
     
     @IBAction func buttonFavorite(_ sender: Any) {
         
@@ -46,25 +119,4 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     }
     
 
-    override func viewDidLoad() {
-        
-        super.viewDidLoad()
-        print("[DEBUG MESSAGE] View loaded.")
-        mainScrollView.contentSize = CGSize(width: 412, height: 870)
-        homeTableView.contentSize = CGSize(width: 412, height: 300)
-        
-        self.whatshotCollectionView.dataSource = self
-        self.whatshotCollectionView.delegate = self
-        
-        
-        whatshotImageArray = []
-        whatshotImageArray.append(whatshotClass(cellImage: UIImage(named: "biologi2")!, cellData: ""))
-        whatshotImageArray.append(whatshotClass(cellImage: UIImage(named: "biologi3")!, cellData: ""))
-        
-
-        
-        whatshotImageArray.append(whatshotClass(cellImage: UIImage(named: "seemorearticles")!, cellData: ""))
-        print(fetchUserData())
-        
-    }
 }

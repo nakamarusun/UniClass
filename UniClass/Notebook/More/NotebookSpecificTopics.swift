@@ -86,7 +86,6 @@ class NotebookSpecificTopics: NotebookViewTable {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "goToContent" {
-            
             let detailViewController = segue.destination as! ContentViewController
             detailViewController.selectedCell = cellArray[TopicsController.indexPathForSelectedRow!.row]
         }
