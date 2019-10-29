@@ -44,8 +44,13 @@ class ContentViewController: NotebookViewTable {
         self.contentViewTableView.dataSource = self
         self.contentViewTableView.delegate = self
         navigationTitleController.title = selectedCell.cellName
+        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
         navigationTitleController.backBarButtonItem?.title = "Subtopics"
         
+        cellArray = []
         switch GlobalVariables.choices {
         
         case "studies":
@@ -59,10 +64,17 @@ class ContentViewController: NotebookViewTable {
         default:
             cellArray.append(StandardCell())
         }
+        GlobalVariables.choicesSubtopic = selectedCell.cellName
+        contentViewTableView.reloadData()
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        self.performSegue(withIdentifier: "goToArticle", sender: nil)
+        switch GlobalVariables.choices {
+        case "quizzes":
+            self.performSegue(withIdentifier: "goToQuestions", sender: nil)
+        default:
+            self.performSegue(withIdentifier: "goToArticle", sender: nil)
+        }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

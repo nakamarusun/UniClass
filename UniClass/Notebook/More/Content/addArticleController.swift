@@ -43,7 +43,7 @@ class addArticleController: UIViewController,UINavigationControllerDelegate, UII
     @IBAction func saveButtonNew(_ sender: Any) {
         let profileData = fetchUserData()
         
-        storeArticle(title: titleTextBoxVar.text!, thumbnail: articleImage.image!, ratingCount: 1, rating: 5, image: articleImage.image!, date: Date(), body: bodyTextBox.text, author: profileData["usr"]!, toSubTopic: "Aljabar")
+        storeArticle(title: titleTextBoxVar.text!, thumbnail: articleImage.image!, ratingCount: 1, rating: 5, image: articleImage.image!, date: Date(), body: bodyTextBox.text, author: profileData["usr"]!, toSubTopic: GlobalVariables.choicesSubtopic)
         
         let message = UIAlertController(title: "Thank you!", message: "Your notebook has been successfully added !", preferredStyle: .alert)
         message.addAction(UIAlertAction(title: "Dismiss", style: .default))

@@ -50,13 +50,16 @@ class ViewController: NotebookViewTable, UICollectionViewDataSource, UICollectio
         
         
         whatshotImageArray = []
-        whatshotImageArray.append(whatshotClass(cellImage: UIImage(named: "biologi2")!, cellData: ""))
-        whatshotImageArray.append(whatshotClass(cellImage: UIImage(named: "biologi3")!, cellData: ""))
+        whatshotImageArray.append(whatshotClass(cellImage: UIImage(named: "162987")!, cellData: ""))
+        whatshotImageArray.append(whatshotClass(cellImage: UIImage(named: "162986")!, cellData: ""))
+        whatshotImageArray.append(whatshotClass(cellImage: UIImage(named: "162988")!, cellData: ""))
+        
         
 
         
         whatshotImageArray.append(whatshotClass(cellImage: UIImage(named: "seemorearticles")!, cellData: ""))
         print(fetchUserData())
+        
         
     }
     
